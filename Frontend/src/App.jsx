@@ -4,6 +4,7 @@ const App = () => {
   return (
     <div>
       street2site
+      <p>This is a paragraph.</p>
     </div>
   )
 }
