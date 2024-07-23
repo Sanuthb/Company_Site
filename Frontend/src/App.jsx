@@ -9,6 +9,7 @@ const App = () => {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium similique nesciunt unde rerum ea vel, deleniti, corrupti quas atque fugiat animi nobis qui repellendus cupiditate deserunt culpa inventore maiores.</p>
 
       changes in main from kishan desk of main branch
+      changes in main from sanuth desk of main branch
     </div>
   )
 }
