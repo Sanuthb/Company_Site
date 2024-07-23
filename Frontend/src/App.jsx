@@ -4,7 +4,6 @@ const App = () => {
   return (
     <div>
       street2site
-    
     </div>
   )
 }
