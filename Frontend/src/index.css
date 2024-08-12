@@ -6,8 +6,8 @@
   --clr--gray:#707070;
 
   /* fontsize for desktop */
-  --font-heading:5rem;  /* 80px */
-  --font-subheading:3rem;  /* 48px */
+  --font-heading:3rem;  /* 80px */
+  --font-subheading:1.7rem;  /* 48px */
   --font-paragraph:1rem;  /* 16px */
   --font-button:1.313rem; /*21px*/
   --font-footer-heading:1.625rem; /*26px*/
@@ -50,8 +50,7 @@ dd {
   margin: 0;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul{
   list-style: none;
 }
 

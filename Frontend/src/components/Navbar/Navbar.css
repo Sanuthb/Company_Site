@@ -1,0 +1,73 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 5%;left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    width: 200px;
+    padding: 0.2rem 1rem ;
+    z-index: 100;
+    box-shadow: -2px 2px 10px rgba(128, 128, 128, 0.356);
+}
+
+
+nav .logo img{
+    width:60px;
+    height: 60px;
+}
+
+.menu_bar{
+    font-size: var(--font-subheading);
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.navitems{
+    position: fixed;
+    top:0;right: -1000px;
+    height: 600px;
+    width: 300px;
+     border-radius: 100% 0% 0% 100% / 49% 0% 100% 51% ;
+    background-color: var( --clr--primary-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    transition: .5s;
+    color: white;
+}
+.active {
+    right: -575px;
+}
+.navitems ul{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navitems ul li{
+    font-size: var(--font-subheading);
+    font-weight: var(--font-weight-800);
+}
+
+.navitems .socials ul{
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.navitems .socials ul li{
+    font-size:1.2rem;
+}
+
+.closebtn{
+    font-size: var(--font-subheading);
+    cursor: pointer;
+}
+

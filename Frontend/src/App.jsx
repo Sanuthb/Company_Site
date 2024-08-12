@@ -1,13 +1,17 @@
 import React from 'react'
-
+import './index.css'
+import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
+import About from './components/About/About'
+import Services from './components/Services/Services'
 const App = () => {
   return (
-    <div>
-      <p>lknfkndsknfdl</p>
-      <p>kishan brnach</p>
-      <p>test brnach</p>
-      <p>i changed app</p>
-    </div>
+    <main>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services/>
+    </main>
   )
 }
 
