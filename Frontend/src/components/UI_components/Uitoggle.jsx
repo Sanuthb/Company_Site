@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Uidesign.css";
+import "./UIdesign.css";
 
 const Uitoggle = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Uidesign.css'
+import "./UIdesign.css";
 import { FaAlignRight } from "react-icons/fa";
 import logo from '../../assets/logo.png'
 

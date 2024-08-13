@@ -2,7 +2,7 @@ import React from 'react'
 import './Services.css'
 import path from '../../assets/path1.png';
 import Uitoggle from '../UI_components/Uitoggle';
-import Uibutton from "../UI_components/uibutton";
+import Uibutton from "../UI_components/Uibutton";
 import Uicalander from '../UI_components/Uicalander';
 import Windownavbar from '../UI_components/Windownavbar';
 import serviceimg2 from "../../assets/serviceimg2.png";
