@@ -1,0 +1,67 @@
+.uibutton{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -2px 2px 10px gray ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uibutton div{
+    background-color: #ff3979;
+    width: 8px;
+    height: 8px;
+}
+
+.uicalanders{
+    background-color: #ff3979;
+    width: 50px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.uicalanders div{
+    padding: .2rem;
+    text-align: center;
+    color:white;
+    line-height: 2;
+}
+
+.uitogglebtn {
+    background-color: white;
+    width: 40px; 
+    height: 20px; 
+    border-radius: 10px; 
+    box-shadow: 1px 1px 5px gray; 
+    position: relative;
+    overflow: hidden; 
+
+}
+
+.uitogglebtn .circle {
+    position: absolute;
+    left: 5%; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%; 
+    animation: movebtn 4s ease-in-out infinite alternate; 
+}
+
+@keyframes movebtn {
+    0% {
+        left: calc(0 + 10px); 
+         background-color: var(--clr--primary-orange); 
+
+    }
+    100% {
+        left: calc(100% - 15px); 
+         background-color: #ff3979; 
+
+    }
+}
+

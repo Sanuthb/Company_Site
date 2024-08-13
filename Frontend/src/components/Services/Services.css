@@ -1,4 +1,62 @@
 .Services{
     width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service{
+    width: 80%;
     height: 100%;
+}
+
+.box1 .service1{
+    height: 31.25rem;
+    width: 16.063rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 3rem;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.service1 .uicontent {
+    padding: 2rem;
+}
+
+.service1 .title {
+    font-size: 1rem;
+    background-color: rgba(201, 195, 195, 0.507);
+    color: var(--clr--primary-orange);
+    border-radius: 5px;
+    width: fit-content;
+    padding: .25rem;
+    
+}
+
+.service1 .heading{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.uidesign{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.uidesign .uicalander{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box1 .service1 .uiimage img {
+        height:200px;
 }
