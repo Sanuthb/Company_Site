@@ -38,7 +38,6 @@
     box-shadow: 1px 1px 5px gray; 
     position: relative;
     overflow: hidden; 
-
 }
 
 .uitogglebtn .circle {
@@ -65,3 +64,23 @@
     }
 }
 
+
+
+.windownavbar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: -2px 2px 10px rgba(128, 128, 128, 0.459);
+}
+
+.windownavbar1 img{
+    width: 25px;
+}
+
+.windownavbar1 .windowmenu{
+    padding-right: .5rem;
+}
