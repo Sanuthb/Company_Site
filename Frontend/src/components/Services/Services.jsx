@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import path from "../../assets/path1.png";
 import Uitoggle from "../UI_components/Uitoggle";
 import Uibutton from "../UI_components/Uibutton";
@@ -57,7 +57,7 @@ const KishanServices = () => {
                   color="white"
                   data={{
                     date: now.getDate() + 18,
-                    month: monthNames[now.getMonth() + 3], 
+                    month: monthNames[now.getMonth() + 3],
                   }}
                 />
               </div>
