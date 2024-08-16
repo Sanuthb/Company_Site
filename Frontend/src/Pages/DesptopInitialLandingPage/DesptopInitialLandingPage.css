@@ -1,0 +1,83 @@
+.DesptopInitialLandingPagenavbar{
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(128, 128, 128, 0.377);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+.DesptopInitialLandingPagenavbar ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.DesptopInitialLandingPagenavbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.DesptopInitialLandingPagenavbar button{
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.DesptopInitialLandingPagehero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.DesptopInitialLandingPagehero .canva{
+  width: 1000px;
+  height: 500px;
+  margin-left: 30px;
+  border: 1px solid gray;
+}
+
+
+.canva-content h2{
+  font-size: 1.4rem;
+  width: 200px;
+}
+.canva-content p{
+  font-size: .9rem;
+  width: 300px;
+  text-align: justify;
+}
+
+.canva-content button{
+  font-size: 1rem;
+  width: 100px;
+  height: 40px;
+  background-color: orange;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(105, 104, 104, 0.425);
+  color: white;
+  border-radius: 10px;
+}
+
+.canva-content-image img{
+  width: 300px;
+}
+
+
+.content-navbar h2{
+  font-size: 20px;
+}
+
+
+.DesptopInitialLandingPage-heading {
+    margin: 20px;
+}
+.DesptopInitialLandingPage-heading h3{
+
+    font-size: 1.5rem;
+}

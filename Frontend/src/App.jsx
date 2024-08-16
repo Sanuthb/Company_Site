@@ -1,18 +1,22 @@
 import React from 'react'
 import './index.css'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Services from "./components/Services/Services";
+import {Route,Routes} from 'react-router-dom'
+import Home from './Pages/Home';
+import DesptopInitialLandingPage from './Pages/DesptopInitialLandingPage/DesptopInitialLandingPage';
+import useWindowSize from './Hooks/useWindowSize'
 const App = () => {
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-    </main>
 
+  const {width} = useWindowSize()
+  const isMobile = width <= 768;
+  
+  return (
+    <Routes>
+      {
+        isMobile && <Route path="/" element={<Home />} />
+      }
+      <Route path="/" element={<DesptopInitialLandingPage />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
   );
 }
 
