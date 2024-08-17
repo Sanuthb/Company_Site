@@ -11,6 +11,7 @@ import serviceimg4 from "../../assets/serviceimg4.png";
 import serviceimg5 from "../../assets/serviceimg5.png";
 import ourServices from "../../assets/splash.svg";
 import styles from "./Services.module.css";
+import {motion} from 'framer-motion'
 
 const KishanServices = () => {
   const now = new Date();
@@ -28,6 +29,9 @@ const KishanServices = () => {
     "Nov",
     "Dec",
   ];
+
+  
+
   return (
     <section className={styles.Services}>
       <div className={styles.Service}>
@@ -118,13 +122,6 @@ const KishanServices = () => {
           <h2>LEARN MORE</h2>
         </div>
       </div>
-
-      {/* <div className={styles.ourservicescontainer}>
-        <div className={styles.ourservices}>
-          <h2>Our <br />Services</h2>
-          <img src={ourServices} alt="" />
-        </div>
-      </div> */}
     </section>
   );
 };

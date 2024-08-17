@@ -5,6 +5,13 @@ import Backgroundcolor from "../../components/DesktopdragComp/Backgroundcolor";
 import image from "../../assets/img.png";
 import { useNavigate } from "react-router-dom";
 import "./DesptopInitialLandingPage.css";
+import logo from '../../assets/logo.png';
+import { LiaDesktopSolid } from "react-icons/lia";
+import { FaMobileAlt } from "react-icons/fa";
+import { LuCornerUpLeft } from "react-icons/lu";
+import { CiCircleMinus } from "react-icons/ci";
+import { FiLayout } from "react-icons/fi";
+import { CiSearch } from "react-icons/ci";
 
 // Custom Hook to get window size
 const useWindowSize = () => {
@@ -29,7 +36,7 @@ const useWindowSize = () => {
 };
 
 const DesptopInitialLandingPage = () => {
-  const [backgroundcolor, setbackgroundcolor] = useState("");
+  const [backgroundcolor, setbackgroundcolor] = useState("white");
   const [Textcolor, setTextcolor] = useState("");
   const [Buttoncolor, setButtoncolor] = useState("");
 
@@ -54,31 +61,84 @@ const DesptopInitialLandingPage = () => {
   }
 
   return (
-    <main>
+    <main className="DesptopInitialLandingPage">
       {/* navbar */}
       <div className="DesptopInitialLandingPagenavbar">
-        <h2>Street2Site</h2>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Templates</a>
-          </li>
-          <li>
-            <a href="#">Trash</a>
-          </li>
-        </ul>
-        <button onClick={handlePublishClick}>Publish</button>
+        <div>
+          <img src={logo} alt="street2site" />
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Templates</a>
+            </li>
+            <li>
+              <a href="#">Trash</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button className="savebtn">Save</button>
+          <button className="previewbtn">Preview</button>
+          <button onClick={handlePublishClick}>Publish</button>
+        </div>
+      </div>
+      <div className="DesptopInitialLandingPage-additionalbar">
+        <div className="DesptopInitialLandingPage-additionalbar-tool">
+          <div className="DesptopInitialLandingPage-additionalbar-tool-container1">
+            <label>Page:</label>
+            <select name="" id="">
+              <option value="">Home</option>
+              <option value="">Service</option>
+              <option value="">Project</option>
+            </select>
+          </div>
+          <div className="DesptopInitialLandingPage-additionalbar-tool-container2">
+            <div className="desktopicon">
+              <LiaDesktopSolid />
+            </div>
+            <div
+              style={{
+                width: "1px",
+                height: "20px",
+                backgroundColor: "rgba(90, 89, 89, 0.356)",
+              }}
+            ></div>
+            <div className="mobileicon">
+              <FaMobileAlt />
+            </div>
+          </div>
+        </div>
+        <div className="DesptopInitialLandingPage-additionalbar-tool">
+          <div className="left-right-icon">
+            <div className="lefticon">
+              <LuCornerUpLeft />
+            </div>
+            <div className="righticon">
+              <LuCornerUpLeft />
+            </div>
+          </div>
+          <div className="CircleMinus">
+            <CiCircleMinus /> 100%
+          </div>
+          <div className="tools">
+            <FiLayout /> Tools
+          </div>
+          <div className="Search">
+            <CiSearch />
+            <input type="text" placeholder="Search.." />
+          </div>
+        </div>
       </div>
       <div className="DesptopInitialLandingPage-heading">
-        <h3>
+        <h4>
           Your Website, Your Way! Arrange Components with Drag-and-Drop
           Simplicity. Click 'Publish' to See It Shine!
-        </h3>
+        </h4>
       </div>
       <div className="DesptopInitialLandingPagehero">
         <div>

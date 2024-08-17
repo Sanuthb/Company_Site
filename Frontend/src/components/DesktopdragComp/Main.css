@@ -1,7 +1,7 @@
 .toolbar{
     width: 50px;
     height: 500px;
-    box-shadow: 2px 0 10px rgba(128, 128, 128, 0.329);
+    box-shadow: 2px 0 10px rgba(247, 163, 67, 0.555);
     border-radius: 30px;
     margin-left: 20px;
     margin-top: 20px;
@@ -10,7 +10,7 @@
     justify-content: center;
     gap: 2rem;
     flex-direction: column;
-    background-color: orange
+    background-color: var( --clr--primary-orange)
 }
 
 .toolbar div{
@@ -37,7 +37,7 @@
     justify-content: space-between;
     flex-direction: column;
     margin-right: 20px;
-    background-color: rgb(247, 242, 242);
+    background-color:#eaf0f6;
     border-radius: 10px;
     box-shadow: -2px 0px 10px rgba(128, 128, 128, 0.295);
     padding: 1rem;
