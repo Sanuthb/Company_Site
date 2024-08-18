@@ -63,6 +63,6 @@ const useDraggable = (initialKeys, canvasWidth, canvasHeight) => {
     positions,
     startDragging,
   };
-};
+};``
 
 export default useDraggable;
