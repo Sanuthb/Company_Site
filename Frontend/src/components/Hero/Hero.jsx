@@ -9,9 +9,13 @@ import { IoIosColorPalette } from "react-icons/io";
 import { IoMegaphoneSharp } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
 import { FaPuzzlePiece } from "react-icons/fa6";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import { createLoopAnimationVariants } from "../../Framer_Animation/Animation";
-
+import Editornavbar from "../Editorcomponents/Editornavbar";
+import Editor_sidebar from "../Editorcomponents/Editor_sidebar";
+import Code_Editor from "../Editorcomponents/Code_Editor";
+import { FaHtml5 } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -166,14 +170,34 @@ const Hero = () => {
           presence
         </h1>
       </div>
-      <div
-        className="hero_content"
-        style={{
-          backgroundColor: "var(--clr--saturation-orange)",
-          justifyContent: "flex-start",
-        }}
-      >
-        <div className="codeeditior"></div>
+      <div className="hero_content">
+        <div className="codeeditior">
+          <div className="code_editor_navbar">
+            <Editornavbar />
+          </div>
+          <div className="code_editor_display">
+            <div className="code_editor_sidebar">
+              <Editor_sidebar />
+            </div>
+            <div className="code_editor_code_are">
+              <div className="editor1">
+                <Code_Editor
+                  title={"index.html"}
+                  logo={<FaHtml5 />}
+                  color={"#fd8446"}
+                  code={[]}
+                />
+              </div>
+              <div className="editor2">
+                <Code_Editor
+                  title={"SuccesSolution.py"}
+                  logo={<FaPython />}
+                  color={"#9dcee6"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

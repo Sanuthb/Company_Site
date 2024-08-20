@@ -18,13 +18,13 @@
 }
 
 .hero_content h1{
-    font-size: 6rem;
-    font-weight: 600;
+    font-size: 7rem;
+    font-weight: 900;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    font-family:sans-serif;
+    font-family:Arial;
 }
 
 .hero_content h1:nth-child(1){
@@ -77,13 +77,35 @@
   transform:rotate(-45deg);
 }
 
+.hero_content:nth-child(2){
+    background-image: url('../../assets//logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .hero_content .codeeditior{
     width: 85%;
-    height: 400px;
-    background-image: linear-gradient(to bottom,black
-    ,#fef4ea) ;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: -2px -3px 10px rgba(0, 0, 0, 0.185);
-    margin-top: 2rem;
+    height: 600px;
+    margin-top: 5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+    border-radius: 1px solid rgba(255,255,255,0.3);
+
+}
+
+.code_editor_navbar{
+    padding: 0.8rem 1rem;
+}
+
+.code_editor_display{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
 }

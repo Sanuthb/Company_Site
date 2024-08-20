@@ -1,0 +1,77 @@
+.Editornavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Editornavbar .editor_buttons {
+  display: flex;
+  gap: 1rem;
+  width: 9%;
+}
+
+.Editornavbar .editor_buttons div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.editor_search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: calc(100% - 9%);
+}
+
+.editor_search_bar .editor_arrows {
+  display: flex;
+  gap: 1rem;
+}
+
+.editor_search_bar .editor_search {
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.editor_search_bar .editor_search input{
+    border: none;
+    background-color: transparent;
+}
+
+.editor_search input:focus{
+    outline: none;
+}
+
+
+.Editor_sidebar{
+    height: 100%;
+    width: 50px;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex-direction: column;
+}
+
+.Editor_sidebar div{
+    font-size: 1.5rem;
+    color: #919294;
+}
+
+
+.editor_tabs{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap: 0.4rem;
+    background-color: #d2d2d338;
+}
