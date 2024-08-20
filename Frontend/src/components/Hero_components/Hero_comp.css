@@ -1,0 +1,7 @@
+.hero_icons{
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px rgba(128, 128, 128, 0.521);
+    background-color: white;
+}
