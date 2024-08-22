@@ -6,16 +6,16 @@ import DesptopInitialLandingPage from './Pages/DesptopInitialLandingPage/Desptop
 import useWindowSize from './Hooks/useWindowSize'
 const App = () => {
 
-  const {width} = useWindowSize()
-  const isMobile = width <= 768;
+  // const {width} = useWindowSize()
+  // const isMobile = width <= 768;
   
   return (
     <Routes>
-      {
+      {/* {
         isMobile && <Route path="/" element={<Home />} />
-      }
-      <Route path="/" element={<DesptopInitialLandingPage />} />
-      <Route path="/home" element={<Home />} />
+      } */}
+      {/* <Route path="/" element={<DesptopInitialLandingPage />} /> */}
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }

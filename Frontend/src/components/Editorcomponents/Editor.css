@@ -1,0 +1,139 @@
+.Editornavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Editornavbar .editor_buttons {
+  display: flex;
+  gap: 1rem;
+  width: 9%;
+}
+
+.Editornavbar .editor_buttons div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.editor_search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: calc(100% - 9%);
+}
+
+.editor_search_bar .editor_arrows {
+  display: flex;
+  gap: 1rem;
+}
+
+.editor_search_bar .editor_search {
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.editor_search_bar .editor_search input{
+    border: none;
+    background-color: transparent;
+}
+
+.editor_search input:focus{
+    outline: none;
+}
+
+
+.Editor_sidebar{
+    height: 100%;
+    width: 50px;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex-direction: column;
+}
+
+.Editor_sidebar div{
+    font-size: 1.5rem;
+    color: #919294;
+}
+
+
+.editor_tabs{
+    display: flex;
+    align-items:flex-start;
+    gap: 0.4rem;
+    padding-left:.5rem;
+    
+}
+
+
+.editor_tabs .editor_tab_content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1rem;
+   cursor: pointer;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+.code_area{
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+    height: auto;
+    padding: .5rem;
+}
+
+.code_area .code_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.code_container .line_numbers{
+  color: #919294;
+}
+
+.code_content {
+  color: #666666;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.code_content .keyword {
+  color: #569cd6; 
+}
+
+.code_content .tag {
+  color: rgb(54, 102, 235); 
+}
+
+.code_content .string {
+  color: #000000; 
+}
+
+.code_content .comment {
+  color: #6a9955;
+}
+
+.code_content .line_number {
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+  color: #858585;
+  margin-right: 10px;
+}
+

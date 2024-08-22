@@ -2,9 +2,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     background-color: white;
-    top: 5%;left: 50%;
+    top: 2%;left: 50%;
     transform: translateX(-50%);
     border-radius: 30px;
     width: 200px;

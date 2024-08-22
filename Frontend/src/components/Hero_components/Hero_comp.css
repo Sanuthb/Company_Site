@@ -1,0 +1,10 @@
+.hero_icons{
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
