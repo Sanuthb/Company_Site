@@ -27,7 +27,7 @@ const Navbar = () => {
       </div>
 
       <div className={menuitems ? "navitems active" : "navitems"}>
-        <div className="itembox">
+        <div className={menuitems ? "itembox itemactive" : "itembox"}>
           <div
             className="closebtn"
             onClick={() => {

@@ -7,6 +7,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import useEyeMovement from "../../Hooks/useEyeballmovement";
+import {motion} from 'framer-motion'
 
 const Hero = () => {
 
@@ -43,11 +44,17 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero_btn">
-          <button>Get Started</button>
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+          >
+            Get Started
+          </motion.button>
         </div>
       </div>
 
-       <div className="hero_content">
+      <div className="hero_content">
         <div className="codeeditior">
           <div className="code_editor_navbar">
             <Editornavbar />
