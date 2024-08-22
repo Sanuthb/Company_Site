@@ -1,0 +1,100 @@
+.contianer {
+  position: relative;
+  height: 800px;
+  background-color: rgba(0, 255, 255, 0.639);
+}
+
+.natureContainer {
+  position: relative;
+  /* display: flex; */
+}
+
+.natureContainer > * {
+  /* display: inline-block; */
+  position: absolute;
+}
+
+.cloud1 {
+  top: 120px;
+  left: -80px;
+  z-index: 1;
+}
+.sun {
+  top: 100px;
+  left: 80px;
+}
+.cloud2 {
+  top: 20px;
+  left: 200px;
+}
+.cloud3 {
+  top: 20px;
+  left: 540px;
+}
+
+.pricingContainer {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  /* align-items: center; */
+
+  padding-top: 15%;
+}
+
+.aeroplaneContainer {
+  position: relative;
+
+  z-index: 2;
+
+  /* width: 100%;
+  height: 100%; */
+  /* margin: auto 0; */
+}
+.aeroplaneImg {
+  /* right: -25%; */
+  /* position: absolute; */
+  transform: rotate(0deg) translateX(20%);
+
+  /* transform: scale(0.85); */
+}
+
+.Desciption {
+  background-color: white;
+  height: 350px;
+  width: 550px;
+  border: 2px solid;
+  border-radius: 40px;
+  box-shadow: 8px 8px 2px rgb(0, 0, 0);
+  transform: rotate(-6deg);
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12.5%;
+  width: 150px;
+  position: relative;
+}
+.top {
+  background-color: black;
+  height: 2px;
+  width: 250px;
+  transform: rotate(-20deg);
+  top: -15%;
+  position: absolute;
+}
+.bottom {
+  background-color: black;
+  height: 2px;
+  width: 250px;
+  transform: rotate(10deg);
+  top: 25%;
+  z-index: 1;
+
+  position: absolute;
+}
