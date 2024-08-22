@@ -58,11 +58,9 @@ const Coding = () => {
           duration: 2,
           ease: "power1.out",
           scrollTrigger: {
-            trigger: "body",
-            // start: "top 20%", // When the animation should start
-            // end: "bottom top", // When the animation should end
+            trigger: descriptionRefs.current[index],
+            start: "top bottom",
             scrub: true,
-            markers: true,
           },
         }
       );
@@ -71,19 +69,15 @@ const Coding = () => {
         titleRefs.current[index],
         {
           x: "35%",
-          //   opacity: 0,
         },
         {
           x: "55%",
-          //   opacity: 1,
           duration: 2,
           ease: "power1.out",
           scrollTrigger: {
             trigger: titleRefs.current[index],
-            // start: "top 20%",
-            // end: "bottom top",
+            start: "top bottom",
             scrub: true,
-            markers: true,
           },
         }
       );

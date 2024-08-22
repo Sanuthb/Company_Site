@@ -1,13 +1,10 @@
 .main {
-  outline: 2px solid;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 .container {
-  outline: 2px solid;
   position: relative;
-
   height: 19rem;
   /* display: flex;
   justify-content: space-evenly; */
