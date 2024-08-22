@@ -118,11 +118,11 @@
 }
 
 .code_content .tag {
-  color: #c586c0; 
+  color: rgb(54, 102, 235); 
 }
 
 .code_content .string {
-  color: #ce9178; 
+  color: #000000; 
 }
 
 .code_content .comment {

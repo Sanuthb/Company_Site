@@ -1,128 +1,53 @@
 import React from "react";
 import "./Hero.css";
-import Hero_icons from "../Hero_components/Hero_icons";
-import { MdAutoGraph } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa6";
-import { TbBulb } from "react-icons/tb";
-import { IoMegaphoneSharp } from "react-icons/io5";
-import { MdDesignServices } from "react-icons/md";
-import { FaPuzzlePiece } from "react-icons/fa6";
-import { motion } from "framer-motion";
-import { createLoopAnimationVariants } from "../../Framer_Animation/Animation";
 import Editornavbar from "../Editorcomponents/Editornavbar";
 import Editor_sidebar from "../Editorcomponents/Editor_sidebar";
 import Code_Editor from "../Editorcomponents/Code_Editor";
 import { FaHtml5 } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
+import useEyeMovement from "../../Hooks/useEyeballmovement";
 
 const Hero = () => {
+
+  useEyeMovement(".eyeball", ".ball");
+
+
   return (
     <div class="hero">
       <div className="hero_content">
-        <div className="hero_side_icons">
-          <motion.div
-            class="hero_icon1"
-            variants={createLoopAnimationVariants(
-              [0, 20, 0, 20, 0],
-              [0, 0, 0, 0],
-              [0, 0, 0]
-            )}
-            initial="initial"
-            animate="animate"
-          >
-            <Hero_icons
-              rotate={"rotate(30deg)"}
-              icons={<FaInstagram />}
-              color={"#DB005B"}
-            />
-          </motion.div>
-          <motion.div
-            class="hero_icon2"
-            variants={createLoopAnimationVariants([], [0, 10, 0, 10, 0], [0,40,0,40,0])}
-            initial="initial"
-            animate="animate"
-          >
-            <Hero_icons
-              rotate={"rotate(10deg)"}
-              icons={<TbBulb />}
-              color={"#F4CE14"}
-            />
-          </motion.div>
-          <motion.div
-            class="hero_icon3"
-            variants={createLoopAnimationVariants([], [0, 10, 0, 10, 0], [])}
-            initial="initial"
-            animate="animate"
-          >
-            <Hero_icons
-              rotate={"rotate(10deg)"}
-              icons={<IoMegaphoneSharp />}
-              color={"#4158A6"}
-            />
-          </motion.div>
+        <div className="hero_heading">
+          <h1>
+            <div className="hero_designbox"></div>
+            <div className="hero_designbox"></div>
+            <div className="hero_designbox"></div>
+            <div className="hero_designbox"></div>
+            <div className="hero_designbox"></div>
+            Design
+          </h1>
+          <h1>Meets</h1>
+          <h1>
+            <div className="eyeball">
+              <div className="ball"></div>
+            </div>
+            <div className="eyeball">
+              <div className="ball"></div>
+            </div>
+            Precision
+          </h1>
         </div>
-
-        <div className="hero_heading_content">
-          <div className="hero_Heading">
-            <h1>Revolutionary </h1>
-          </div>
-          <div className="hero_Heading">
-            <h1>Solutions</h1>
-          </div>
-          <div className="hero_ctc_button">
-            <button>Get Started</button>
-          </div>
+        <div className="hero_para">
+          <p>
+            With just a few clicks, Street2Site brings your business to life,
+            allowing you to focus on perfecting the final, impactful details.
+          </p>
         </div>
-        <div className="hero_side_icons">
-          <motion.div
-            class="hero_icon4"
-            variants={createLoopAnimationVariants(
-              [],
-              [0, -10, 0, -10,0],
-              [0, 0, 0]
-            )}
-            initial="initial"
-            animate="animate"
-          >
-            <Hero_icons
-              rotate={"rotate(30deg)"}
-              icons={<MdAutoGraph />}
-              color={"#88D66C"}
-            />
-          </motion.div>
-          <motion.div
-            class="hero_icon5"
-            variants={createLoopAnimationVariants(
-              [],
-              [0, -5, 0, -5, 0],
-              [0, 45, 0, 45, 0]
-            )}
-            initial="initial"
-            animate="animate"
-          >
-            <Hero_icons
-              rotate={"rotate(50deg)"}
-              icons={<MdDesignServices />}
-              color={"#EB3678"}
-            />
-          </motion.div>
-          <motion.div
-            class="hero_icon6"
-            variants={createLoopAnimationVariants([0, 10, 0, 10, 0], [], [])}
-            initial="initial"
-            animate="animate"
-          >
-            <Hero_icons
-              rotate={"rotate(10deg)"}
-              icons={<FaPuzzlePiece />}
-              color={"#B4D6CD"}
-            />
-          </motion.div>
+        <div className="hero_btn">
+          <button>Get Started</button>
         </div>
       </div>
 
-      <div className="hero_content">
+       <div className="hero_content">
         <div className="codeeditior">
           <div className="code_editor_navbar">
             <Editornavbar />
