@@ -1,0 +1,21 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  min-height: 800px;
+}
+
+.testimonailContainer {
+  outline: 2px solid;
+  height: 24rem;
+  width: 21rem;
+  border-radius: 2rem;
+}
+
+.top {
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 2rem; 
+  border-top-right-radius: 2rem;
+  background-color: var(  --clr--primary-orange);
+}

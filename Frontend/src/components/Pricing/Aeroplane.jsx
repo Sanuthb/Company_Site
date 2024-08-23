@@ -5,6 +5,7 @@ import cloud2 from "../../assets/pricing/cloud2.png";
 import sun from "../../assets/pricing/sun.png";
 import styles from "./Aeroplane.module.css";
 import gsap from "gsap";
+import RoadMarquee from "./RoadMarquee";
 
 const Aeroplane = () => {
   const floatRef = useRef(null);
@@ -12,19 +13,19 @@ const Aeroplane = () => {
     const element = floatRef.current;
     const tl = gsap.timeline();
 
-    gsap.set(element, {
-      xPercent: 20,
-    });
-    tl.to(element, {
-      xPercent: 0,
-      ease: "linear",
-      duration: 0.5,
-    });
+    // gsap.set(element, {
+    //   xPercent: 20,
+    // });
+    // tl.to(element, {
+    //   xPercent: 0,
+    //   ease: "linear",
+    //   duration: 0.5,
+    // });
     tl.to(element, {
       y: 40,
       repeat: -1,
       yoyo: true,
-      duration: 1,
+      duration: 0.8,
       ease: "linear",
     });
   }, []);
@@ -52,6 +53,9 @@ const Aeroplane = () => {
           <h1>Beautifully Priced Designs</h1>
         </div>
       </div>
+      {/* <RoadMarquee /> */}
+      <div className={styles.RoadContainer}><RoadMarquee/></div>
+      {/* <div className={styles.greenary}></div> */}
     </div>
   );
 };

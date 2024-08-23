@@ -2,15 +2,15 @@
   position: relative;
   height: 800px;
   background-color: rgba(0, 255, 255, 0.639);
+  z-index: -2;
 }
 
 .natureContainer {
   position: relative;
-  /* display: flex; */
+  scale: 0.85;
 }
 
 .natureContainer > * {
-  /* display: inline-block; */
   position: absolute;
 }
 
@@ -36,9 +36,8 @@
   display: flex;
   gap: 0;
   justify-content: center;
-  /* align-items: center; */
 
-  padding-top: 15%;
+  padding-top: 8%;
 }
 
 .aeroplaneContainer {
@@ -46,16 +45,10 @@
 
   z-index: 2;
 
-  /* width: 100%;
-  height: 100%; */
-  /* margin: auto 0; */
+  
 }
 .aeroplaneImg {
-  /* right: -25%; */
-  /* position: absolute; */
   transform: rotate(0deg) translateX(20%);
-
-  /* transform: scale(0.85); */
 }
 
 .Desciption {
@@ -67,7 +60,6 @@
   box-shadow: 8px 8px 2px rgb(0, 0, 0);
   transform: rotate(-6deg);
   z-index: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,3 +90,20 @@
 
   position: absolute;
 }
+
+
+
+.RoadContainer {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  /* scale: 1.2; */
+  /* transform: rotate(-10deg); */
+}
+
+/* .greenary{
+  background-color: rgb(0, 11, 128);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} */

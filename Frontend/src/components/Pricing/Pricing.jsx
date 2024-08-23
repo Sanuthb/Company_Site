@@ -6,7 +6,6 @@ const Pricing = () => {
   return (
     <>
       <Aeroplane />
-      <RoadMarquee />
     </>
   );
 };
