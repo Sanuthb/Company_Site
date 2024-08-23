@@ -32,39 +32,23 @@
 
 .uitogglebtn {
     background-color: white;
-    width: 40px; 
-    height: 20px; 
-    border-radius: 10px; 
+    width: 50px; 
+    height: 30px; 
+    border-radius: 20px; 
     box-shadow: 1px 1px 5px gray; 
-    position: relative;
     overflow: hidden; 
+    padding: .1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .uitogglebtn .circle {
-    position: absolute;
-    left: 5%; 
-    top: 50%;
-    transform: translateY(-50%); 
-    width: 10px;
-    height: 10px; 
-    border-radius: 50%; 
-    animation: movebtn 4s ease-in-out infinite alternate; 
+   background-color: #ff3979;
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
 }
-
-@keyframes movebtn {
-    0% {
-        left: calc(0 + 10px); 
-         background-color: var(--clr--primary-orange); 
-
-    }
-    100% {
-        left: calc(100% - 15px); 
-         background-color: #ff3979; 
-
-    }
-}
-
-
 
 .windownavbar1{
     display: flex;

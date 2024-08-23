@@ -1,0 +1,26 @@
+.Enquire_section{
+    background-color: var(--clr--primary-orange);
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    width: 100%;
+    padding: 3vw 2vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.Enquire_section h1{
+    font-size: 4rem;
+}
+
+.Enquire_section .Inquire_btn{
+    background-color: white;
+    color: var(--clr--primary-orange);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
