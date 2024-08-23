@@ -15,7 +15,7 @@ const Hero = () => {
 
 
   return (
-    <div class="hero">
+    <div className="hero">
       <div className="hero_content">
         <div className="hero_heading">
           <h1>
