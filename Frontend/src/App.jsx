@@ -4,6 +4,7 @@ import {Route,Routes} from 'react-router-dom'
 import Home from './Pages/Home';
 import DesptopInitialLandingPage from './Pages/DesptopInitialLandingPage/DesptopInitialLandingPage';
 import useWindowSize from './Hooks/useWindowSize'
+import About from './Pages/About';
 const App = () => {
 
   // const {width} = useWindowSize()
@@ -16,6 +17,7 @@ const App = () => {
       } */}
       {/* <Route path="/" element={<DesptopInitialLandingPage />} /> */}
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 }
