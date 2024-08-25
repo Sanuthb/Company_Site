@@ -48,11 +48,12 @@
 }
 
 .about_div1 .about_year{
-  bottom: 45%;
+  bottom: 40%;
 }
 
 .about_div3 .about_year{
-  top: 0%;
+  top: 1% !important;
+
 }
 
 

@@ -1,0 +1,102 @@
+.Company_culture {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 3vw 2vw;
+}
+
+.companyculturebox {
+  height: 300px;
+}
+
+.companyculturebox h1 {
+  font-size: 3rem;
+}
+
+.companyculture1 {
+  width: 50%;
+  line-height: 3.5rem;
+}
+
+.companyculture1 p {
+  font-size: 1rem;
+}
+
+.companyculture2 {
+  width: 45%;
+  padding: 1vw 3vw;
+  background-color: #f1dec6;
+  border-radius: 10px;
+}
+.companyculture2 h1 {
+  font-size: 8rem;
+}
+
+.companyculture2 p {
+  text-wrap: wrap;
+}
+
+.companyculture3 {
+  width: 55%;
+  background-color: #f0c856;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+.companyculture3 h1 {
+  font-size: 5rem;
+}
+
+.companyculture4 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  background-color: #ff8a8a;
+  border-radius: 10px;
+  padding: 5vw;
+}
+
+.companyculture4 h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.companyculture5 {
+  width: 55%;
+  background-color: #c3abff;
+  border-radius: 10px;
+  padding: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.companyculture5  h1{
+    line-height: 3rem;
+    text-align: center;
+}
+
+.companyculture6 {
+  width: 40%;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  color: white;
+  padding: 2vw;
+}
+.companyculture6 h1 {
+  line-height: 3rem;
+  margin-bottom: 4vw;
+}

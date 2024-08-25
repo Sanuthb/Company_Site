@@ -6,6 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
+import {Link} from "react-router-dom"
 
 
 const Navbar = () => {
@@ -37,10 +38,18 @@ const Navbar = () => {
             <RxCross2 />
           </div>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/">Services</Link>
+            </li>
+            <li>
+              <Link to="/">Contact</Link>
+            </li>
           </ul>
           <div className="socials">
             <ul>

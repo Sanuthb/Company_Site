@@ -77,13 +77,16 @@ nav .logo img {
     gap: 1rem;
 }
 
-.navitems ul li {
-    font-size: var(--font-subheading);
+.navitems ul li a{
+    font-size: 2.5rem;
     font-weight: var(--font-weight-800);
+    text-decoration: none;
+    color: var(--clr--primary-orange);
 }
 
 .navitems .socials ul {
     flex-direction: row;
+    gap: 2rem;
     margin-top: 10px;
 }
 
@@ -95,3 +98,5 @@ nav .logo img {
     font-size: var(--font-subheading);
     cursor: pointer;
 }
+
+

@@ -14,7 +14,7 @@ const About_landing = () => {
         scroller: "body",
         start: "50% 50%",
         end: "100% 50%",
-        scrub: 3,
+        scrub: 2,
         markers: false,
         pin: true,
       },
