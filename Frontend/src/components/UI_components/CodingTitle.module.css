@@ -1,0 +1,24 @@
+.container {
+  width: 36.25rem;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--clr--primary-orange);
+  border-radius: 2.15rem;
+  align-items: center;
+
+
+  position: absolute;
+
+  
+  /* right: 5%;  ending */
+
+
+  /* starting */
+  /* right: 25%; */
+
+  
+
+  
+}

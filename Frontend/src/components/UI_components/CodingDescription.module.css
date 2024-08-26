@@ -1,0 +1,48 @@
+.container {
+  width: 36.25rem;
+  height: 15.625rem;
+  border: 1px solid;
+  border-radius: 2.15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-inline: 2rem;
+
+  position: absolute;
+
+  /* right: 55%; ending */
+
+
+/* starting */
+  /* right: 35%; */
+
+}
+
+.ImgContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.ImgContainer img {
+  width: 2rem;
+  height: 4.8rem;
+}
+
+.TitleContainer {
+  display: flex;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.TitleContainer span {
+  border: 1px solid;
+  padding: 0.215rem 1.25rem;
+}
+
+.Description {
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-align: end;
+  margin-top: 12px;
+}

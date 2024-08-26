@@ -1,0 +1,32 @@
+.road-wrapper {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  background-color: rgb(6, 9, 22);
+  bottom: 0;
+}
+
+.road-container {
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  margin-inline: 1px;
+}
+
+.road {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(6, 9, 22);
+}
+
+.road-segment {
+  width: 260px;
+  height: 45px;
+  background-color: white;
+}
+
+
