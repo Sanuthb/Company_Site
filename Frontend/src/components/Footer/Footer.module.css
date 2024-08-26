@@ -144,5 +144,5 @@
 .logoContainer h1 {
   font-size: 8vw;
 
-  letter-spacing: 1rem;
+  /* letter-spacing: 0.25rem; */
 }
