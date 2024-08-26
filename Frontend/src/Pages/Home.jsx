@@ -7,6 +7,8 @@ import Enquire_section from "../components/Enquire_section/Enquire_section";
 import Coding from "../components/Coding/Coding";
 import Pricing from "../components/Pricing/Pricing";
 import Testimonial from "../components/Testimonial/Testimonial";
+import CTA from "../components/CTA/CTA";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <Coding />
       <Pricing />
       <Testimonial />
+      <CTA/>
+      <Footer/>
     </main>
   );
 };

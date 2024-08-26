@@ -86,6 +86,9 @@ const Coding = () => {
 
   return (
     <div className={styles.main}>
+      <h1 className={styles.heading}>
+        Expertise in <span className={styles.highlight}>Coding <span></span></span>
+      </h1>
       {Object.keys(codingSections).map((key, index) => (
         <div className={styles.container} key={key}>
           <div
