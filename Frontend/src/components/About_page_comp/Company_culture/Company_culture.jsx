@@ -5,59 +5,58 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./Company_culture.css";
 
 const Company_culture = () => {
-  // Register ScrollTrigger plugin
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
-  useGSAP(() => {
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Company_culture",
-        scroller: "body",
-        markers: false,
-        start: "-10% 10%",
-        end: "bottom 100%",
-        scrub: 2,
-      },
-    });
+  // useGSAP(() => {
+  // //   const timeline = gsap.timeline({
+  // //     scrollTrigger: {
+  // //       trigger: ".Company_culture",
+  // //       scroller: "body",
+  // //       markers: true,
+  // //       start: "0% 10%",
+  // //       end: "bottom bottom",
+  // //       scrub: 2,
+  // //     },
+  // //   });
 
-    timeline
-      .fromTo(
-        ".companyculture1",
-        { x: "-200%"},
-        { x: "0%", duration: 0.5 },
-        "same_time"
-      )
-      .fromTo(
-        ".companyculture2",
-        { x: "200%"},
-        { x: "0%", duration: 0.5 },
-        "same_time"
-      )
-      .fromTo(
-        ".companyculture3",
-        { x: "-200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time1"
-      )
-      .fromTo(
-        ".companyculture4",
-        { x: "200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time1"
-      )
-      .fromTo(
-        ".companyculture5",
-        { x: "-200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time2"
-      )
-      .fromTo(
-        ".companyculture6",
-        { x: "200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time2"
-      );
-  });
+  // //   timeline
+  // //     .fromTo(
+  // //       ".companyculture1",
+  // //       { x: "-100%"},
+  // //       { x: "0%", duration: 0.5 },
+  // //       "same_time"
+  // //     )
+  // //     .fromTo(
+  // //       ".companyculture2",
+  // //       { x: "100%"},
+  // //       { x: "0%", duration: 0.5 },
+  // //       "same_time"
+  // //     )
+  // //     .fromTo(
+  // //       ".companyculture3",
+  // //       { x: "-200%" },
+  // //       { x: "0%", duration: 0.5 },
+  // //       "same_time1"
+  // //     )
+  // //     .fromTo(
+  // //       ".companyculture4",
+  // //       { x: "200%" },
+  // //       { x: "0%", duration: 0.5 },
+  // //       "same_time1"
+  // //     )
+  // //     .fromTo(
+  // //       ".companyculture5",
+  // //       { x: "-200%" },
+  // //       { x: "0%", duration: 0.5 },
+  // //       "same_time2"
+  // //     )
+  // //     .fromTo(
+  // //       ".companyculture6",
+  // //       { x: "200%" },
+  // //       { x: "0%", duration: 0.5 },
+  // //       "same_time2"
+  // //     );
+  // // });
 
   return (
     <div className="Company_culture">

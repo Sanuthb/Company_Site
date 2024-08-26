@@ -1,63 +1,28 @@
 import React from "react";
 import "./About_landing.css";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import about_page_animation from "../../../Gsap_Animation/About_animation";
+import about_office from "../../../assets/about_office.jpg";
+import Company_culture from "../Company_culture/Company_culture";
 
 const About_landing = () => {
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".about_start_year",
-        scroller: "body",
-        start: "50% 50%",
-        end: "100% 50%",
-        scrub: 2,
-        markers: false,
-        pin: true,
-      },
-    });
-
-    tl.to(
-      ".about_div1",
-      {
-        top: "-50%",
-      },
-      "same_time"
-    );
-    tl.to(
-      ".about_div3",
-      {
-        top: "100%",
-      },
-      "same_time"
-    );
-    tl.to(
-      ".top_h",
-      {
-        y: "80%",
-      },
-      "same_time"
-    );
-    tl.to(
-      ".bottom_h",
-      {
-        y: "-80%",
-      },
-      "same_time"
-    );
-  });
+  about_page_animation(
+    ".about_landing_section",
+    ".about_top_container",
+    ".about_bottom_container",
+    ".dummy_box",
+    ".about_company_story",
+    ".about_text_para",
+    ".about_image img",
+    ".our_culture"
+  );
 
   return (
-    <div className="about_start_year">
-      <div className="about_div1">
-        <div className="about_year">
-          <h1 className="top_h">Est.2023</h1>
-        </div>
+    <div className="about_landing_section">
+      <div className="about_main_year about_top_container">
+        <h1>Est. 2023</h1>
       </div>
-      <div className="about_div2">
+      <div className="about_content">
+        <div className="dummy_box"></div>
         <div className="about_company_story">
           <p>
             <span style={{ fontWeight: "600", color: "white" }}>
@@ -93,13 +58,19 @@ const About_landing = () => {
             and deep understanding to deliver results that matter.
           </p>
         </div>
-      </div>
-      <div className="about_div3">
-        <div className="about_year">
-          <h1 className="bottom_h">
-            Est.2023
-          </h1>
+        <div className="about_text_para">
+          <h5>Shaping the digital world,</h5>
+          <p>enjoying every step.</p>
         </div>
+        <div className="about_image">
+          <img src={about_office} alt="" />
+        </div>
+        <div className="our_culture">
+          <Company_culture/>
+        </div>
+      </div>
+      <div className="about_main_year about_bottom_container">
+        <h1>Est. 2023</h1>
       </div>
     </div>
   );
