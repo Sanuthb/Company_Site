@@ -1,11 +1,30 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
+  min-height: auto;
 }
+
+.heading {
+  font-size: 3rem;
+  margin: 5rem auto;
+}
+
+.highlight {
+  position: relative;
+}
+.highlight span {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 0.5rem;
+  left: 0;
+  bottom: 25%;
+  background-image: linear-gradient(to right, #feb47b, #ff7e5f);
+  z-index: -1;
+}
+
 .container {
   position: relative;
-  height: 19rem;
-  /* display: flex;
-  justify-content: space-evenly; */
+  min-height: 19rem;
 }
