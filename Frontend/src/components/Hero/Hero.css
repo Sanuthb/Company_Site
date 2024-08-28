@@ -9,7 +9,7 @@
 
 .hero_content:nth-child(1) {
   padding: 8vw 10vw;
-  padding-bottom: 1vw;
+  /* padding-bottom: 1vw; */
 }
 
 .hero_heading {
@@ -140,7 +140,7 @@
   opacity: 0.5;
 }
 
-.hero_content:nth-child(2) {
+/* .hero_content:nth-child(2) {
   background-color: var(--clr--primary-orange);
   background-image: url("../../assets//logo.png");
   background-repeat: no-repeat;
@@ -201,4 +201,4 @@
   width: calc(100% - 60%);
   border-radius: 15px;
   border-top-right-radius: 0px;
-}
+} */

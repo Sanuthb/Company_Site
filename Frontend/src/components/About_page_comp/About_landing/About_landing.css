@@ -1,6 +1,6 @@
 .about_landing_section {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
@@ -39,8 +39,9 @@
 
 .about_content {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: black;
+  overflow: hidden;
 
 }
 

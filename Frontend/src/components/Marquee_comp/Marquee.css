@@ -1,0 +1,27 @@
+.Marquee {
+  width: 100%;
+  background-color: var(--clr--primary-orange);
+  padding: 5vw 0vw;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.Marquee_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  white-space: nowrap;
+}
+
+.Marquee_container h1 {
+  font-size: 15vw;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-right: 1vw;
+  line-height: 0.9;
+}

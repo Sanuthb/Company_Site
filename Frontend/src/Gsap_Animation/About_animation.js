@@ -20,7 +20,7 @@ const about_page_animation = (
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: "bottom top",
+        end: "top -100%",
         scrub: 1,
         pin: true,
         markers: true,
@@ -43,76 +43,77 @@ const about_page_animation = (
       },
       "start"
     );
-    tl.fromTo(
-      dummy_box,
-      {
-        y: "200%",
-        opacity: 0,
-      },
-      {
-        y:"-100%",
-        opacity: 1,
-        duration: 2,
-      },
-      "start+=0.5"
-    );
+    //   tl.fromTo(
+    //     dummy_box,
+    //     {
+    //       y: "200%",
+    //       opacity: 0,
+    //     },
+    //     {
+    //       y:"-100%",
+    //       opacity: 1,
+    //       duration: 2,
+    //     },
+    //     "start+=0.5"
+    //   );
 
-    tl.fromTo(
-      about_company_story,
-      {
-        y: "200%",
-        opacity: 0,
-      },
-      {
-        y: "-100%",
-        opacity: 1,
-        duration: 2,
-      },
-      "start+=1"
-    );
+    //   tl.fromTo(
+    //     about_company_story,
+    //     {
+    //       y: "200%",
+    //       opacity: 0,
+    //     },
+    //     {
+    //       y: "-100%",
+    //       opacity: 1,
+    //       duration: 2,
+    //     },
+    //     "start+=1"
+    //   );
 
-    tl.fromTo(
-      about_text_para,
-      {
-        y: "200%",
-        opacity: 0,
-      },
-      {
-        y: "-100%",
-        opacity: 1,
-        duration: 2,
-      },
-      "start+=1.5"
-    );
+    //   tl.fromTo(
+    //     about_text_para,
+    //     {
+    //       y: "200%",
+    //       opacity: 0,
+    //     },
+    //     {
+    //       y: "-100%",
+    //       opacity: 1,
+    //       duration: 2,
+    //     },
+    //     "start+=1.5"
+    //   );
 
-    tl.fromTo(
-      about_image,
-      {
-        scale: 0.8,
-        opacity: 0,
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        duration: 2.5,
-      },
-      "start+=2"
-    );
+    //   tl.fromTo(
+    //     about_image,
+    //     {
+    //       scale: 0.8,
+    //       opacity: 0,
+    //     },
+    //     {
+    //       scale: 1,
+    //       opacity: 1,
+    //       duration: 2.5,
+    //     },
+    //     "start+=2"
+    //   );
 
-    tl.fromTo(
-      our_culture,
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 2.5,
-      },
-      "start+=2.5"
-    );
-  });
+    //   tl.fromTo(
+    //     our_culture,
+    //     {
+    //       opacity: 0,
+    //       y: 50,
+    //     },
+    //     {
+    //       opacity: 1,
+    //       y: 0,
+    //       duration: 2.5,
+    //     },
+    //     "start+=2.5"
+    //   );
+    // });
+  })
 };
 
 export default about_page_animation;

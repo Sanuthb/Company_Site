@@ -1,13 +1,13 @@
 import React from "react";
 import "./Hero.css";
-import Editornavbar from "../Editorcomponents/Editornavbar";
-import Editor_sidebar from "../Editorcomponents/Editor_sidebar";
-import Code_Editor from "../Editorcomponents/Code_Editor";
-import { FaHtml5 } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { FaReact } from "react-icons/fa6";
 import useEyeMovement from "../../Hooks/useEyeballmovement";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+// import Editornavbar from "../Editorcomponents/Editornavbar";
+// import Editor_sidebar from "../Editorcomponents/Editor_sidebar";
+// import Code_Editor from "../Editorcomponents/Code_Editor";
+// import { FaHtml5 } from "react-icons/fa";
+// import { FaPython } from "react-icons/fa";
+// import { FaReact } from "react-icons/fa6";
 
 const Hero = () => {
 
@@ -15,7 +15,12 @@ const Hero = () => {
 
 
   return (
-    <div className="hero">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="hero"
+    >
       <div className="hero_content">
         <div className="hero_heading">
           <h1>
@@ -54,7 +59,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero_content">
+      {/* <div className="hero_content">
         <div className="codeeditior">
           <div className="code_editor_navbar">
             <Editornavbar />
@@ -121,7 +126,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
