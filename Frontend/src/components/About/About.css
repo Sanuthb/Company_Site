@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction:column;
     padding: 10vw 5vw;
+    position: relative;
 }
 
 .About div h1{

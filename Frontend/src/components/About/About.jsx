@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './About.css'
+import Image_trail from '../Image_trail/Image_trail';
+import img1 from "../../assets/about_img_trils/img1.jpg";
+import img2 from '../../assets/about_img_trils/img2.jpg'
+import img3 from "../../assets/about_img_trils/img3.jpg";
 
 const About = () => {
+
+  const images = [
+      img1,img2,img3
+  ]
+
+  const aboutref=useRef(null)
   return (
-    <section className="About">
+    <section ref={aboutref} className="About" data-scroll data-scroll-section>
+      <Image_trail images={images} section={".About"} />
       <div>
         <h1>THE</h1>
       </div>

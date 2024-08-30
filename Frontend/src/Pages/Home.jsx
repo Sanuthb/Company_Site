@@ -15,7 +15,7 @@ import LocomotiveScroll from "locomotive-scroll";
 const Home = () => {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <main>
+    <main >
       <Navbar />
       <Hero />
       <Marquee />
