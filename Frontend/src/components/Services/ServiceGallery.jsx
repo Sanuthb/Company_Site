@@ -59,6 +59,8 @@ const ServiceGallery = () => {
         markers: true,
       });
 
+       
+
       details.forEach((detail, index) => {
         // console.log(detail);
         let headline = detail.querySelector("h4");
