@@ -35,6 +35,7 @@ const KishanServices = () => {
   return (
     <section className={styles.Services}>
       <div className={styles.Service}>
+        
         <div className={styles.service1}>
           <div className={styles.uicontent}>
             <div className={styles.title}>

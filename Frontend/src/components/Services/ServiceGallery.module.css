@@ -1,0 +1,313 @@
+.gallery {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  outline: 2px solid red;
+}
+
+.desktopContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  outline: 2px solid green;
+}
+
+.desktopContentSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 2px solid blue;
+}
+.desktopContentSection h4 {
+  font-size: 1.302rem;
+  font-weight: 500;
+  padding-right: 0.6rem;
+  letter-spacing: 0.4px;
+  color: black;
+}
+
+.desktopContentSection p {
+  color: #000;
+  /* font-size: .453rem; */
+  padding-bottom: 10px;
+  letter-spacing: 0.38px;
+  font-weight: 400;
+  padding-top: 0.3rem;
+}
+
+
+
+.right {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* position: relative; */
+}
+
+.desktopPhotos {
+  align-self: baseline;
+  width: 29.5vw;
+  height: 29.5vw;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); */
+}
+
+.desktopPhoto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.service1 {
+  height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 3rem;
+  border: 1px solid gray;
+  overflow: hidden;
+}
+
+.service1 .uicontent {
+  padding: 2rem;
+}
+
+.service1 .title {
+  font-size: 1rem;
+  background-color: rgba(201, 195, 195, 0.507);
+  color: var(--clr--primary-orange);
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0.25rem;
+}
+
+.service1 .heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.uidesign {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.uidesign .uicalander {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.service1 .uiimage img {
+  /* height: 200px; */
+}
+
+.service2,
+.service3 {
+  /* height: 16.065rem;
+  width: 25.25rem; */
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 3rem;
+  border: 1px solid gray;
+  overflow: hidden;
+}
+
+.service2 .windowhead {
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 30px;
+
+}
+
+.windowhead .red,
+.yellow,
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.windowhead .red {
+  background-color: red;
+}
+.windowhead .yellow {
+  background-color: yellow;
+}
+
+.windowhead .green {
+  background-color: rgb(3, 212, 3);
+}
+
+.service2 .windowbody {
+  width: 100%;
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.service2 .windowbody h2 {
+  width: 300px;
+}
+
+.service2 .windowbody .windownavbar {
+  position: absolute;
+  top: 10%;
+}
+
+.service2 .windowbody .wave1 {
+  position: absolute;
+  right: -50px;
+  top: -10px;
+  border-radius: 60% 40% 51% 49% / 42% 57% 43% 58%;
+  background-color: #c7ff0a;
+  width: 80px;
+  height: 100px;
+}
+
+.service2 .windowbody .wave2 {
+  position: absolute;
+  right: -50px;
+  bottom: -40px;
+  border-radius: 24% 76% 54% 46% / 54% 75% 25% 46%;
+  background-color: #d425e8;
+  width: 250px;
+  height: 100px;
+  color: white;
+  padding-left: 1rem;
+}
+
+.service2 .windowbody .tag {
+  width: 30px;
+  height: 30px;
+  background-color: #fe5563;
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  left: 10%;
+  top: 80%;
+  box-shadow: -1px 1px 5px rgba(66, 66, 66, 0.719);
+}
+
+.service3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  background-image: url("../../assets/service.png");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.service3 h2 {
+  background-color: rgba(255, 255, 255, 0.63);
+  border-radius: 20px;
+}
+
+.service4 {
+  /* height: 27rem;
+  width: 16rem; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3rem;
+  border: 1px solid gray;
+  overflow: hidden;
+  font-size: 1.8rem;
+  font-weight: 800;
+  position: relative;
+}
+
+.service4 .service4heading h2:nth-child(2) {
+  padding-left: 2rem;
+  font-size: 1.7rem;
+}
+
+.service4bottomcolor {
+  width: 100%;
+  height: 50px;
+  background-color: #bbc1e2;
+}
+
+.serviceimg1 {
+  position: absolute;
+  top: 16%;
+  right: 10%;
+  width: 100px;
+  filter: drop-shadow(2px 2px 1px gray);
+}
+.serviceimg2 {
+  position: absolute;
+  top: 76%;
+  right: 10%;
+  width: 50px;
+  filter: drop-shadow(2px 2px 1px gray);
+}
+.serviceimg3 {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  width: 50px;
+  transform: rotate(-15deg);
+  filter: drop-shadow(2px 2px 1px gray);
+}
+
+.serviceimg4 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  width: 100px;
+  transform: rotate(75deg);
+  filter: drop-shadow(2px 2px 1px gray);
+}
+.serviceimg5 {
+  position: absolute;
+  top: 6%;
+  left: 80%;
+  width: 50px;
+  transform: rotate(-15deg);
+}
+.serviceimg6 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 20px;
+  transform: rotate(75deg);
+  filter: drop-shadow(2px 2px 1px gray);
+}
