@@ -1,26 +1,95 @@
-.Enquire_section{
-    background-color: var(--clr--primary-orange);
-    border-bottom-right-radius:20px ;
-    border-bottom-left-radius:20px ;
+.Enquire_section {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enquire_container {
+  width: 80%;
+  height: 80vh;
+  background-color: #f9faf9;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 4vw;
+}
+
+.enquire_container1{
     width: 100%;
-    padding: 3vw 2vw;
-    color: white;
+    height: 33.3%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    gap: 2rem;
     flex-direction: column;
 }
 
-.Enquire_section h1{
-    font-size: 4rem;
+.enquire_container1 .enquire_heading{
+    color: black;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
-.Enquire_section .Inquire_btn{
+.enquire_heading h3{
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 5;
+    text-transform: capitalize;
+}
+
+.enquire_paragraph p{
+    color: var(--clr--gray);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.enquire_buttons{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.enquire_buttons .enquire_button{
+    padding: 1vw 1.5vw;
+    background-color: var(--clr--primary-orange);
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.enquire_play_button{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquire_play_button .enquire_button{
     background-color: white;
     color: var(--clr--primary-orange);
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    cursor: pointer;
+    border: 1px solid var(--clr--primary-orange);
+}
+
+/* Enquire_3d_text */
+
+.text_wrapper h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  line-height: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  text-wrap: nowrap;
+
 }

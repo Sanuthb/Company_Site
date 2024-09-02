@@ -1,21 +1,20 @@
-
 .trail-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 9999; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
 }
 
 .image {
-    position: absolute;
-    width: 100px; 
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
