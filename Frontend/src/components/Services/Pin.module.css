@@ -56,6 +56,8 @@
   align-self: baseline;
   width: 29.5vw;
   height: 29.5vw;
+  border-radius: 3rem;
+
   position: relative;
   overflow: hidden;
   /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); */
@@ -67,13 +69,10 @@
   height: 100%;
   border-radius: 3rem;
 
-
   /* display: flex;
   justify-content: center;
   align-items: center; */
 }
-
-
 
 .service1 {
   /* height: 100%;
@@ -139,8 +138,8 @@
   overflow: hidden;
 }
 
-.service2{
-    background-color: purple;
+.service2 {
+  background-color: purple;
 }
 
 .service2 .windowhead {
@@ -265,8 +264,7 @@
   font-weight: 800;
   position: relative; */
 
-    background-color: orange;
-
+  background-color: orange;
 }
 
 .service4 .service4heading h2:nth-child(2) {
