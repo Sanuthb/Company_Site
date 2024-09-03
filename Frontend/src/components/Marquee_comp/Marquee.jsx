@@ -6,7 +6,7 @@ const Marquee = () => {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed=".5"
+      data-scroll-speed="1"
       className="Marquee"
     >
       <div className="Marquee_container">

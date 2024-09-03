@@ -1,0 +1,118 @@
+.Contact_landing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.contact_landing_container {
+  width: 75%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2vw;
+}
+
+.contact_landing_container_left {
+  width: 40%;
+  border-radius: 10px;
+  background-color: #ecefec;
+}
+
+.contact_landing_container_left img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.contact_landing_container_left .contact_card {
+  width: 100%;
+  padding: 1vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.contact_card h1 {
+  font-size: 1.5rem;
+}
+
+.contact_details {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.contact_details .contact_detail h1 {
+  font-size: 1rem;
+}
+
+.contact_detail p {
+  font-size: 0.8rem;
+}
+
+
+.contact_landing_container_right{
+    width: 60%;
+    height: 100%;
+    padding: 1vw 2vw;
+}
+.contact_form_heading{
+    font-size: 2rem;
+}
+.contact_form .input{
+    width: 100%;
+    margin: 0.5vw 0vw;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: 1px solid #c9ccc9;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input::placeholder{
+    color: #c9ccc9;
+}
+
+
+.contact_form label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact_form textarea{
+    width: 100%;
+    margin: 0.5vw 0vw;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: 1px solid #c9ccc9;
+}
+
+.contact_form textarea::placeholder{
+    color: #c9ccc9;
+}
+
+.contact_form textarea:focus{
+    outline: none;
+}
+
+.submit_btn{
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+.submit_btn button{
+    padding: 0.8vw 2vw;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--clr--primary-orange);
+    color: white;
+    cursor: pointer;
+}
