@@ -45,7 +45,7 @@ const ServiceGallery = () => {
     // const photos = photosRef.current;
 
     const details = detailsRef.current.slice(1); // Get all sections except the first one
-    const photos = photosRef.current.slice(1); // Get all
+    const photos = photosRef.current.slice(1); 
 
     gsap.set(photos, { yPercent: 101 });
 
@@ -57,7 +57,7 @@ const ServiceGallery = () => {
         start: "top top",
         end: "bottom bottom",
         pin: `.${styles.right}`,
-        // pinSpacing: false,
+        pinSpacing: false,
         markers: true,
       });
 
@@ -74,6 +74,22 @@ const ServiceGallery = () => {
           onLeaveBack: () =>
             gsap.to(photos[index], { yPercent: 101, duration: 1 }),
         });
+
+        // ScrollTrigger.create({
+        //   trigger: headline,
+        //   start: "top bottom",
+        //   end: "bottom 40%",
+        //   scrub: true,
+        //   markers: true,
+        //   onUpdate: (self) => {
+        //     const progress = self.progress;
+        //     gsap.to(photos[index], {
+        //       yPercent: 101 - progress * 101,
+        //       duration: 0.1,
+        //       ease: "none",
+        //     });
+        //   },
+        // });
       });
     });
 
@@ -90,19 +106,21 @@ const ServiceGallery = () => {
           {[
             {
               heading: "UI/UX Design",
-              paragraph: "Interface Design User Experience Creative Layouts",
+              paragraph: "Interface Design, User Experience, Creative Layouts",
             },
             {
               heading: "Web Design & Development",
-              paragraph: "Web Creation Online Presence Development Skills",
+              paragraph: "Web Creation, Online Presence, Development Skills",
             },
             {
               heading: "Digital Marketing",
-              paragraph: "SEO Strategies Online Advertising Content Promotion",
+              paragraph:
+                "SEO Strategies, Online Advertising, Content Promotion",
             },
             {
               heading: "Success Solutions",
-              paragraph: "Winning Methods Growth Strategies Achievement Plans",
+              paragraph:
+                "Winning Methods, Growth Strategies, Achievement Plans",
             },
           ].map((service, index) => (
             <div
@@ -113,6 +131,7 @@ const ServiceGallery = () => {
               <div className={styles.desktopContentContainer}>
                 <h1>{service.heading}</h1>
                 <p>{service.paragraph}</p>
+                <button>Enquire Now</button>
               </div>
             </div>
           ))}

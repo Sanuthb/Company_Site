@@ -31,22 +31,40 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 .desktopContentContainer h1 {
-  font-size: 1.302rem;
-  font-weight: 500;
+  font-size: 2.302rem;
+  font-weight: 900;
   padding-right: 0.6rem;
   letter-spacing: 0.4px;
+  text-align: center;
   color: black;
+
+  /* transform: translateY(-100%); */
 }
 
 .desktopContentContainer p {
   color: #000;
-  /* font-size: .453rem; */
+  font-size: 1.125rem;
   padding-bottom: 10px;
   letter-spacing: 0.38px;
-  font-weight: 400;
-  padding-top: 0.3rem;
+  font-weight: 500;
+  padding-inline: 1rem;
+  text-align: center;
+
+}
+.desktopContentContainer button {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  padding:0.5rem 1rem;
+  background-color: white;
+
+  border-radius: 0.85rem;
+  bottom: 25%;
+  /* margin-top:10% ; */
 }
 
 .right {
