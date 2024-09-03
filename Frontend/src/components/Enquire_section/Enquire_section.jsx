@@ -1,11 +1,14 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Enquire_section.css";
 import Enquire_3d_text from "./Enquire_3d_text";
 import gsap from "gsap";
+import Enquire_popup from "../Enquire_popup/Enquire_popup";
 
 const Enquire_section = () => {
   const buttonRef = useRef(null);
   const sectionRef = useRef(null);
+
+  const [trigger,settrigger]=useState(false)
 
   useEffect(() => {
     const button = buttonRef.current;
@@ -76,12 +79,13 @@ const Enquire_section = () => {
           <Enquire_3d_text />
         </div>
         <div className="enquire_container1 enquire_buttons">
-          <button className="enquire_button">Try Us</button>
+          <button className="enquire_button" onClick={() => {settrigger(true)}}>Try Us</button>
           <div className="enquire_play_button" ref={buttonRef}>
             <button className="enquire_button">Don't Try Us</button>
           </div>
         </div>
       </div>
+      <Enquire_popup trigger={trigger} />
     </div>
   );
 };
