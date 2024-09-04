@@ -1,20 +1,17 @@
 .gallery {
   display: flex;
-  /* height: 400vh;  */
 }
 
 .left {
   width: 50%;
   height: 100%;
-  outline: 2px solid red;
 }
 
 .desktopContent {
+  margin-right: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
-  outline: 2px solid green;
 }
 
 .desktopContentSection {
@@ -22,23 +19,52 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  outline: 2px solid blue;
-}
-.desktopContentSection h4 {
-  font-size: 1.302rem;
-  font-weight: 500;
-  padding-right: 0.6rem;
-  letter-spacing: 0.4px;
-  color: black;
 }
 
-.desktopContentSection p {
+.desktopContentContainer {
+  border: 1px solid black;
+
+  width: 29.5vw;
+  height: 29.5vw;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.desktopContentContainer h1 {
+  font-size: 2.302rem;
+  font-weight: 900;
+  padding-right: 0.6rem;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: black;
+
+  /* transform: translateY(-100%); */
+}
+
+.desktopContentContainer p {
   color: #000;
-  /* font-size: .453rem; */
+  font-size: 1.125rem;
   padding-bottom: 10px;
   letter-spacing: 0.38px;
-  font-weight: 400;
-  padding-top: 0.3rem;
+  font-weight: 500;
+  padding-inline: 1rem;
+  text-align: center;
+
+}
+.desktopContentContainer button {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  padding:0.5rem 1rem;
+  background-color: white;
+
+  border-radius: 0.85rem;
+  bottom: 25%;
+  /* margin-top:10% ; */
 }
 
 .right {
@@ -56,9 +82,13 @@
   align-self: baseline;
   width: 29.5vw;
   height: 29.5vw;
+  border-radius: 3rem;
+  border: 1px solid black;
+
   position: relative;
   overflow: hidden;
-  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); */
+
+  margin-left: 3rem;
 }
 
 .desktopPhoto {
@@ -66,27 +96,23 @@
   width: 100%;
   height: 100%;
   border-radius: 3rem;
-
+  background-color: white;
 
   /* display: flex;
   justify-content: center;
   align-items: center; */
 }
 
-
-
 .service1 {
-  /* height: 100%;
+  height: 100%;
   height: 100%;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
   border-radius: 3rem;
-  border: 1px solid gray;
-  overflow: hidden; */
-
-  background-color: red;
+  /* border: 1px solid gray; */
+  overflow: hidden;
 }
 
 .service1 .uicontent {
@@ -122,26 +148,24 @@
   gap: 1rem;
 }
 
-.service1 .uiimage img {
-  /* height: 200px; */
-}
+/* .service1 .uiimage img {
+  height: 200px;
+} */
 
 .service2,
 .service3 {
-  /* height: 16.065rem;
-  width: 25.25rem; */
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: column;
   border-radius: 3rem;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   overflow: hidden;
 }
 
-.service2{
-    background-color: purple;
-}
+/* .service2 {
+  background-color: purple;
+} */
 
 .service2 .windowhead {
   background-color: black;
@@ -232,7 +256,7 @@
 }
 
 .service3 {
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
@@ -240,9 +264,7 @@
   background-image: url("../../assets/service.png");
   background-repeat: none;
   background-position: center;
-  background-size: cover; */
-
-  background-color: lime;
+  background-size: cover;
 }
 
 .service3 h2 {
@@ -251,22 +273,16 @@
 }
 
 .service4 {
-  /* height: 27rem;
-  width: 16rem; */
-
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 3rem;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   overflow: hidden;
   font-size: 1.8rem;
   font-weight: 800;
-  position: relative; */
-
-    background-color: orange;
-
+  position: relative;
 }
 
 .service4 .service4heading h2:nth-child(2) {

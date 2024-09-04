@@ -45,7 +45,7 @@ const ServiceGallery = () => {
     // const photos = photosRef.current;
 
     const details = detailsRef.current.slice(1); // Get all sections except the first one
-    const photos = photosRef.current.slice(1); // Get all
+    const photos = photosRef.current.slice(1); 
 
     gsap.set(photos, { yPercent: 101 });
 
@@ -57,12 +57,12 @@ const ServiceGallery = () => {
         start: "top top",
         end: "bottom bottom",
         pin: `.${styles.right}`,
-        // pinSpacing: false,
+        pinSpacing: false,
         markers: true,
       });
 
       details.forEach((detail, index) => {
-        let headline = detail.querySelector("h4");
+        let headline = detail.querySelector("h1");
 
         ScrollTrigger.create({
           trigger: headline,
@@ -74,6 +74,22 @@ const ServiceGallery = () => {
           onLeaveBack: () =>
             gsap.to(photos[index], { yPercent: 101, duration: 1 }),
         });
+
+        // ScrollTrigger.create({
+        //   trigger: headline,
+        //   start: "top bottom",
+        //   end: "bottom 40%",
+        //   scrub: true,
+        //   markers: true,
+        //   onUpdate: (self) => {
+        //     const progress = self.progress;
+        //     gsap.to(photos[index], {
+        //       yPercent: 101 - progress * 101,
+        //       duration: 0.1,
+        //       ease: "none",
+        //     });
+        //   },
+        // });
       });
     });
 
@@ -88,18 +104,35 @@ const ServiceGallery = () => {
       <div className={styles.left}>
         <div className={styles.desktopContent}>
           {[
-            "UI/UX Design",
-            "Web Design & Development",
-            "Digital Marketing",
-            "Success Solutions",
+            {
+              heading: "UI/UX Design",
+              paragraph: "Interface Design, User Experience, Creative Layouts",
+            },
+            {
+              heading: "Web Design & Development",
+              paragraph: "Web Creation, Online Presence, Development Skills",
+            },
+            {
+              heading: "Digital Marketing",
+              paragraph:
+                "SEO Strategies, Online Advertising, Content Promotion",
+            },
+            {
+              heading: "Success Solutions",
+              paragraph:
+                "Winning Methods, Growth Strategies, Achievement Plans",
+            },
           ].map((service, index) => (
             <div
               key={index}
               className={styles.desktopContentSection}
               ref={(el) => (detailsRef.current[index] = el)}
             >
-              <h4>{service}</h4>
-              <p>{service}</p>
+              <div className={styles.desktopContentContainer}>
+                <h1>{service.heading}</h1>
+                <p>{service.paragraph}</p>
+                <button>Enquire Now</button>
+              </div>
             </div>
           ))}
         </div>
@@ -110,7 +143,7 @@ const ServiceGallery = () => {
             className={`${styles.desktopPhoto} ${styles.service1}`}
             ref={(el) => (photosRef.current[0] = el)}
           >
-            {/* <div className={styles.uicontent}>
+            <div className={styles.uicontent}>
               <div className={styles.title}>
                 <p>INTERFACE DESIGN</p>
               </div>
@@ -146,13 +179,13 @@ const ServiceGallery = () => {
             </div>
             <div className={styles.uiimage}>
               <img src={path} alt="" />
-            </div> */}
+            </div>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service2}`}
             ref={(el) => (photosRef.current[1] = el)}
           >
-            {/* <div className={styles.windowhead}>
+            <div className={styles.windowhead}>
               <div className={styles.red}></div>
               <div className={styles.yellow}></div>
               <div className={styles.green}></div>
@@ -167,19 +200,19 @@ const ServiceGallery = () => {
                 <h2>Aa</h2>
               </div>
               <div className={styles.tag}>&lt;/&gt;</div>
-            </div> */}
+            </div>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service3}`}
             ref={(el) => (photosRef.current[2] = el)}
           >
-            {/* <h2>Digital Marketing</h2> */}
+            <h2>Digital Marketing</h2>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service4}`}
             ref={(el) => (photosRef.current[3] = el)}
           >
-            {/* <div className={styles.service4heading}>
+            <div className={styles.service4heading}>
               <h2>Success</h2>
               <h2>Solutions</h2>
             </div>
@@ -188,7 +221,7 @@ const ServiceGallery = () => {
             <img src={serviceimg2} alt="" className={styles.serviceimg3} />
             <img src={serviceimg4} alt="" className={styles.serviceimg4} />
             <img src={serviceimg3} alt="" className={styles.serviceimg5} />
-            <img src={serviceimg5} alt="" className={styles.serviceimg6} /> */}
+            <img src={serviceimg5} alt="" className={styles.serviceimg6} />
           </div>
         </div>
       </div>
