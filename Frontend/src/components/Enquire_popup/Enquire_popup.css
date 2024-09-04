@@ -10,6 +10,9 @@
   width: 100%;
   height: 100%;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .enquire_popup_container {
@@ -87,4 +90,11 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.Enquiry_btn{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap:2rem;
 }

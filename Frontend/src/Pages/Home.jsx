@@ -1,4 +1,4 @@
-import React from "react";
+import react from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Marquee from "../components/Marquee_comp/Marquee";
@@ -13,9 +13,9 @@ import Footer from "../components/Footer/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 
 const Home = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  const scroll = new LocomotiveScroll()
   return (
-    <main >
+    <main data-scroll-container>
       <Navbar />
       <Hero />
       <Marquee />

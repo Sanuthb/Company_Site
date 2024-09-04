@@ -7,7 +7,8 @@ import {
   formStatusState,
 } from "../../../Atoms/Contactfrom_atom/ContactAtom";
 import emailjs from "emailjs-com";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+import { CONTACT_TEMP_ID, EMAILJS_API, Service_ID } from "../../../../API_KEYS";
 
 const Contact_landing = () => {
   const [formData, setFormData] = useRecoilState(formDataState);
@@ -21,19 +22,14 @@ const Contact_landing = () => {
     e.preventDefault();
 
     emailjs
-      .send(
-        "service_lr8tlc5",
-        "template_31jeup5",
-        formData,
-        "aS5MNuJ2YFh9woUBu"
-      )
+      .send(Service_ID, CONTACT_TEMP_ID, formData,EMAILJS_API)
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
-        setFormStatus("Email sent successfully!");
+        setFormStatus("Form Submitted");
       })
       .catch((error) => {
         console.error("FAILED...", error);
-        setFormStatus("Failed to send email.");
+        setFormStatus("Failed to send submit.");
       });
   };
 
