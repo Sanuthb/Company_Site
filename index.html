@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Effect</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .box {
+            background-color: rebeccapurple;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        .images{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img class="images" src="img1.jpg" alt="">
+        <img class="images" src="img2.jpg" alt="">
+        <img class="images" src="img3.jpg" alt="">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const body = document.body
+
+        const Mathutils = {
+            lerp: (a, b, n) => (1 - n) * a + n + b,
+            distance: (x1, y1, x2, y2) => Math.hypot(x2 - x1, y1 - y2)
+        }
+
+        const getMousePos = (e) => {
+            let PosX = 0;
+            let PosY = 0;
+
+            if (!e) e = window.event
+            if (e.pageX || e.pageY) {
+                PosX = e.pageX
+                PosY = e.pageY
+            }
+            else if (e.clientX || e.clientY) {
+                PosX = e.clientX + document.body.scrollLeft + docE1.scrollLeft
+                PosY = e.clientY + document.body.scrollTop + docE1.scrollTop
+            }
+            return { x: PosX, y: PosY }
+        }
+
+        let mousePos = lastMousepos = cachemousePos = { x: 0, y: 0 }
+        window.addEventListener('mousemove', ev => mousePos = getMousePos(e));
+        const getMouseDistance = () => Mathutils.distance(mousePos.x, mousePos.y, lastMousepos.x, lastMousepos.y)
+
+        class Image{
+            constructor(el){
+                this.DOM={el:el};
+                this.defaultStyle = {
+                    scale:1,
+                    x:0,
+                    y:0,
+                    opacity:0
+                };
+                this.getRect();
+                this.initEvents();
+            }
+            initEvents(){
+                window.addEventListener("resize",()=> this.resize())
+            }
+            resize(){
+                TweenMax.set(this.DOM.el,this.defaultStyle);
+                this.getRect();
+            }
+            getRect(){
+                this.rect = this.DOM.el.getBoundingClientRect();
+            }
+            isActive(){
+                return TweenMax.isTweening(this.DOM.el) || this.DOM.el.style.opacity !=0;
+            }
+        }
+
+        class ImageTrail{
+            constructor(){
+                this.DOM
+            }
+        }
+
+        const preloadImages = () =>{
+            return new Promise((resolve, reject)=>{
+                imagesLoaded(document.querySelectorAll('.images'), resolve)
+            })
+        }
+
+    </script>
+</body>
+
+</html>

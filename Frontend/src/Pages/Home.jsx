@@ -11,6 +11,8 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
 import Pin from "../components/Services/Pin.jsx";
+import LocomotiveScroll from "locomotive-scroll";
+import Enquire_section from '../components/Enquire_section/Enquire_section.jsx'
 
 const Home = () => {
   const scroll = new LocomotiveScroll()
@@ -21,6 +23,7 @@ const Home = () => {
       <Marquee />
       <About />
       <Services />
+      <Enquire_section/>
       {/* <ServiceGallery /> */}
       <Pin/>
       {/* <Coding /> */}
