@@ -58,7 +58,7 @@ const ServiceGallery = () => {
         end: "bottom bottom",
         pin: `.${styles.right}`,
         pinSpacing: false,
-        markers: true,
+        markers: false,
       });
 
       details.forEach((detail, index) => {

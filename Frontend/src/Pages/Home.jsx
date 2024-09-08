@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer";
 import Pin from "../components/Services/Pin.jsx";
 import LocomotiveScroll from "locomotive-scroll";
 import Enquire_section from '../components/Enquire_section/Enquire_section.jsx'
+import Play_reel_section from "../components/Play_reel_section/Play_reel_section.jsx";
 
 const Home = () => {
   const scroll = new LocomotiveScroll()
@@ -17,9 +18,10 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <About />
-      <Enquire_section/>
+      <Play_reel_section/>
+      {/* <About /> */}
       <Pin/>
+      <Enquire_section/>
       <Testimonial />
       <CTA />
       <Footer />

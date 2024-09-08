@@ -1,0 +1,37 @@
+.Play_reel_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.play_reel_scroll_text{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play_reel_scroll_text h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.play_reel_video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 200px;
+    z-index: -10;
+}
+
+.play_reel_video video{
+    width: 100%;height: 100%;
+    border-radius: 2vw;
+    object-fit: fill;
+}
