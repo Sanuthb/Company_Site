@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import path from "../../assets/path1.png";
 import Uitoggle from "../UI_components/Uitoggle";
@@ -39,13 +39,11 @@ const ServiceGallery = () => {
     "Nov",
     "Dec",
   ];
+  const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
-    // const details = detailsRef.current;
-    // const photos = photosRef.current;
-
-    const details = detailsRef.current.slice(1); // Get all sections except the first one
-    const photos = photosRef.current.slice(1); 
+    const details = detailsRef.current.slice(1);
+    const photos = photosRef.current.slice(1);
 
     gsap.set(photos, { yPercent: 101 });
 
@@ -58,7 +56,7 @@ const ServiceGallery = () => {
         end: "bottom bottom",
         pin: `.${styles.right}`,
         pinSpacing: false,
-        markers: true,
+        markers: false,
       });
 
       details.forEach((detail, index) => {
@@ -74,30 +72,55 @@ const ServiceGallery = () => {
           onLeaveBack: () =>
             gsap.to(photos[index], { yPercent: 101, duration: 1 }),
         });
-
-        // ScrollTrigger.create({
-        //   trigger: headline,
-        //   start: "top bottom",
-        //   end: "bottom 40%",
-        //   scrub: true,
-        //   markers: true,
-        //   onUpdate: (self) => {
-        //     const progress = self.progress;
-        //     gsap.to(photos[index], {
-        //       yPercent: 101 - progress * 101,
-        //       duration: 0.1,
-        //       ease: "none",
-        //     });
-        //   },
-        // });
       });
     });
+
+    const handleScroll = () => {
+      const sections = detailsRef.current;
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach((section, index) => {
+        const { top, bottom } = section.getBoundingClientRect();
+        const sectionTop = top + window.scrollY;
+        const sectionBottom = bottom + window.scrollY;
+
+        if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+          setActiveSection(index);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       mm.revert();
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (activeSection !== null) {
+      console.log(`Active section: ${activeSection}`);
+      switch (activeSection) {
+        case 0:
+          galleryRef.current.style.backgroundColor = "#fae1ee";
+          break;
+        case 1:
+          galleryRef.current.style.backgroundColor = "#e0f0ff";
+          break;
+        case 2:
+          galleryRef.current.style.backgroundColor = "#ffede0";
+          break;
+        case 3:
+          galleryRef.current.style.backgroundColor = "#d3d6f0";
+          break;
+        default:
+          galleryRef.current.style.backgroundColor = "#ffeae0"; // Default color if no section is active
+          break;
+      }
+    }
+  }, [activeSection]);
 
   return (
     <div ref={galleryRef} className={styles.gallery}>
