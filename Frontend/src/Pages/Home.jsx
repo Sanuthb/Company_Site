@@ -2,7 +2,6 @@ import react from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Marquee from "../components/Marquee_comp/Marquee";
-import About from "../components/About/About";
 import Testimonial from "../components/Testimonial/Testimonial";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
@@ -19,7 +18,6 @@ const Home = () => {
       <Hero />
       <Marquee />
       <Play_reel_section/>
-      {/* <About /> */}
       {/* <Pin/> */}
       <Enquire_section/>
       <Testimonial />

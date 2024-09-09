@@ -6,20 +6,6 @@
     justify-content: center;
     position: relative;
     background-color: black;
-    color: white;
-}
-
-
-.play_reel_scroll_text{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.play_reel_scroll_text h1{
-    font-size: 5rem;
-    font-weight: bold;
 }
 
 .play_reel_video{
