@@ -15,6 +15,7 @@ const Play_reel_section = () => {
     var tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
+        markers: true,
         start: "top top",
         end: "bottom center",
         scrub: 1,
@@ -38,19 +39,11 @@ const Play_reel_section = () => {
       },
       "same"
     );
-    tl.fromTo(
-      videocontinerRef.current,
-      {
-        width: "400px",
-        height: "200px",
-      },
-      {
-        width: "100%",
-        height: "100%",
-        duration: 0.5,
-      },
-      "same"
-    );
+
+    tl.to(videocontinerRef.current,{
+      scale:3.5
+    },"same")
+
     tl.to(
       videoRef.current,
       {

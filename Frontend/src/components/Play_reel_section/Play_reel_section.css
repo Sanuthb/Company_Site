@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: black;
+    color: white;
 }
 
 
@@ -16,7 +18,7 @@
 }
 
 .play_reel_scroll_text h1{
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 

@@ -9,8 +9,8 @@
 
 .enquire_container {
   width: 80%;
-  height: 80vh;
-  background-color: #f9faf9;
+  height: 60%;
+  background-color: #eff3ef;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -81,14 +81,18 @@
 
 /* Enquire_3d_text */
 
+.text_wrapper{
+    width: 100%;
+}
+
 .text_wrapper h1 {
-  font-size: 3rem;
+  font-size: 4vw;
   text-align: center;
   margin: 0;
   line-height: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
   text-wrap: nowrap;
 

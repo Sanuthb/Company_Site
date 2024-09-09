@@ -20,7 +20,7 @@ const Home = () => {
       <Marquee />
       <Play_reel_section/>
       {/* <About /> */}
-      <Pin/>
+      {/* <Pin/> */}
       <Enquire_section/>
       <Testimonial />
       <CTA />
