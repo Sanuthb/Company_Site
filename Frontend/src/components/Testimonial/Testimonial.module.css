@@ -18,7 +18,7 @@
 }
 
 .blue {
-  background-color: #a7cbf6;
+  background-color: #9BC4F4;
 }
 
 .pink {
@@ -28,17 +28,14 @@
   background-color: #fcea59;
 }
 .container p {
-  padding: 2rem 2.85rem;
-  font-size: 2.25rem;
+  padding: 2rem  1rem;
+  font-size: 2.2rem;
   line-height: 2.95rem;
-  text-align: start;
   font-weight: 400;
 }
 
 .video {
   height: 10rem;
   width: 18rem;
-  scale: 1.2;
   margin-bottom: 4rem;
-  /* outline: 2px solid; */
 }
