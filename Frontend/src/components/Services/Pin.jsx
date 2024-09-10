@@ -23,22 +23,8 @@ const ServiceGallery = () => {
   const galleryRef = useRef(null);
   const detailsRef = useRef([]);
   const photosRef = useRef([]);
+  const desktopPhotos = useRef(null);
 
-  const now = new Date();
-  const monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
@@ -105,18 +91,28 @@ const ServiceGallery = () => {
       switch (activeSection) {
         case 0:
           galleryRef.current.style.backgroundColor = "#fae1ee";
+          desktopPhotos.current.style.boxShadow =
+            "10px 0 5px #e0b3c2, -10px 0 5px #e0b3c2, 0 10px 5px #e0b3c2, 0 -10px 5px #e0b3c2";
           break;
         case 1:
           galleryRef.current.style.backgroundColor = "#e0f0ff";
+          desktopPhotos.current.style.boxShadow =
+            "10px 0 5px #b3d3f2, -10px 0 5px #b3d3f2, 0 10px 5px #b3d3f2, 0 -10px 5px #b3d3f2";
           break;
         case 2:
           galleryRef.current.style.backgroundColor = "#ffede0";
+          desktopPhotos.current.style.boxShadow =
+            "10px 0 5px #e3c4a6, -10px 0 5px #e3c4a6, 0 10px 5px #e3c4a6, 0 -10px 5px #e3c4a6";
           break;
         case 3:
           galleryRef.current.style.backgroundColor = "#d3d6f0";
+          desktopPhotos.current.style.boxShadow =
+            "10px 0 5px #b3b7d6, -10px 0 5px #b3b7d6, 0 10px 5px #b3b7d6, 0 -10px 5px #b3b7d6";
           break;
         default:
-          galleryRef.current.style.backgroundColor = "#ffeae0"; // Default color if no section is active
+          galleryRef.current.style.backgroundColor = "#ffeae0"; // Default color
+          desktopPhotos.current.style.boxShadow =
+            "10px 0 5px #d3a3a3, -10px 0 5px #d3a3a3, 0 10px 5px #d3a3a3, 0 -10px 5px #d3a3a3";
           break;
       }
     }
@@ -129,21 +125,15 @@ const ServiceGallery = () => {
           {[
             {
               heading: "UI/UX Design",
-              paragraph: "Interface Design, User Experience, Creative Layouts",
             },
             {
               heading: "Web Design & Development",
-              paragraph: "Web Creation, Online Presence, Development Skills",
             },
             {
               heading: "Digital Marketing",
-              paragraph:
-                "SEO Strategies, Online Advertising, Content Promotion",
             },
             {
               heading: "Success Solutions",
-              paragraph:
-                "Winning Methods, Growth Strategies, Achievement Plans",
             },
           ].map((service, index) => (
             <div
@@ -151,99 +141,38 @@ const ServiceGallery = () => {
               className={styles.desktopContentSection}
               ref={(el) => (detailsRef.current[index] = el)}
             >
-              <div className={styles.desktopContentContainer}>
+              <div className={`${styles[`desktopContentSection${index + 1}`]}`}>
                 <h1>{service.heading}</h1>
-                <p>{service.paragraph}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.desktopPhotos}>
+        <div className={styles.desktopPhotos} ref={desktopPhotos}>
           <div
             className={`${styles.desktopPhoto} ${styles.service1}`}
             ref={(el) => (photosRef.current[0] = el)}
           >
-            <div className={styles.uicontent}>
-              <div className={styles.title}>
-                <p>INTERFACE DESIGN</p>
-              </div>
-              <div className={styles.heading}>
-                <h2>UI/UX Design</h2>
-              </div>
-              <div className={styles.uibutton}>
-                <Uibutton />
-              </div>
-              <div className={styles.uidesign}>
-                <div className={styles.uicalander}>
-                  <Uicalander
-                    backgroundColor="#ffff"
-                    color="black"
-                    data={{
-                      date: now.getDate(),
-                      month: monthNames[now.getMonth()],
-                    }}
-                  />
-                  <Uicalander
-                    backgroundColor="#ff3979"
-                    color="white"
-                    data={{
-                      date: now.getDate() + 18,
-                      month: monthNames[now.getMonth() + 3],
-                    }}
-                  />
-                </div>
-                <div className={styles.uitoggle}>
-                  <Uitoggle />
-                </div>
-              </div>
-            </div>
-            <div className={styles.uiimage}>
-              <img src={path} alt="" />
-            </div>
+            <h1>Interface Design, User Experience, Creative Layouts</h1>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service2}`}
             ref={(el) => (photosRef.current[1] = el)}
           >
-            <div className={styles.windowhead}>
-              <div className={styles.red}></div>
-              <div className={styles.yellow}></div>
-              <div className={styles.green}></div>
-            </div>
-            <div className={styles.windowbody}>
-              <div className={styles.windownavbar}>
-                <Windownavbar />
-              </div>
-              <h2>Website Design & Development</h2>
-              <div className={styles.wave1}></div>
-              <div className={styles.wave2}>
-                <h2>Aa</h2>
-              </div>
-              <div className={styles.tag}>&lt;/&gt;</div>
-            </div>
+            <h1>Interface Design, User Experience, Creative Layouts</h1>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service3}`}
             ref={(el) => (photosRef.current[2] = el)}
           >
-            <h2>Digital Marketing</h2>
+            <h1>Interface Design, User Experience, Creative Layouts</h1>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service4}`}
             ref={(el) => (photosRef.current[3] = el)}
           >
-            <div className={styles.service4heading}>
-              <h2>Success</h2>
-              <h2>Solutions</h2>
-            </div>
-            <img src={serviceimg1} alt="" className={styles.serviceimg1} />
-            <img src={serviceimg2} alt="" className={styles.serviceimg2} />
-            <img src={serviceimg2} alt="" className={styles.serviceimg3} />
-            <img src={serviceimg4} alt="" className={styles.serviceimg4} />
-            <img src={serviceimg3} alt="" className={styles.serviceimg5} />
-            <img src={serviceimg5} alt="" className={styles.serviceimg6} />
+            <h1>Interface Design, User Experience, Creative Layouts</h1>
           </div>
         </div>
       </div>
