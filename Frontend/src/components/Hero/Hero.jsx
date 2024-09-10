@@ -16,9 +16,6 @@ const Hero = () => {
 
   return (
     <div
-      data-scroll
-      data-scroll-section
-      data-scroll-speed="-.3"
       className="hero"
     >
       <div className="hero_content">
