@@ -140,6 +140,47 @@
   opacity: 0.5;
 }
 
+@media only screen and (max-width: 476px) {
+  .hero_heading h1 {
+    font-size: 2rem;
+  }
+  .hero_heading h1:nth-child(2) {
+    font-size: 2rem;
+  }
+  .eyeball {
+    display: none;
+  }
+  .hero_designbox {
+    width: 10px;
+    height: 10px;
+  }
+  .hero_designbox:nth-child(1) {
+    top: -5px;
+    left: -5%;
+  }
+  .hero_designbox:nth-child(2) {
+    bottom: -5px;
+    left: -5%;
+  }
+  .hero_designbox:nth-child(3) {
+    top: -5px;
+    right: -5%;
+  }
+  .hero_designbox:nth-child(4) {
+    bottom: -5px;
+    right: -5%;
+  }
+  .hero_designbox:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    bottom: -80%;
+  }
+}
+
+
+
+
+
 /* .hero_content:nth-child(2) {
   background-color: var(--clr--primary-orange);
   background-image: url("../../assets//logo.png");
