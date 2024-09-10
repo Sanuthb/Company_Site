@@ -23,7 +23,7 @@
 }
 
 .desktopContentContainer {
-  border: 1px solid black;
+  background-color: white;
 
   width: 29.5vw;
   height: 29.5vw;
@@ -113,7 +113,7 @@
   /* border: 1px solid gray; */
   overflow: hidden;
   background-color: #fae1ee;
-}
+} 
 
 .service1 .uicontent {
   padding: 2rem;

@@ -154,7 +154,6 @@ const ServiceGallery = () => {
               <div className={styles.desktopContentContainer}>
                 <h1>{service.heading}</h1>
                 <p>{service.paragraph}</p>
-                <button>Enquire Now</button>
               </div>
             </div>
           ))}
