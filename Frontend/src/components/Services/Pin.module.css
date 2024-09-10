@@ -1,5 +1,6 @@
 .gallery {
   display: flex;
+  transition: background-color 0.5s ease; /* Add this line for smooth color transition */
 }
 
 .left {
@@ -31,7 +32,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 .desktopContentContainer h1 {
   font-size: 2.302rem;
@@ -52,15 +52,14 @@
   font-weight: 500;
   padding-inline: 1rem;
   text-align: center;
-
 }
 .desktopContentContainer button {
   color: #000;
   font-size: 1.125rem;
   font-weight: 500;
   text-align: center;
-  padding:0.5rem 1rem;
-  background-color: white;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
 
   border-radius: 0.85rem;
   bottom: 25%;
@@ -113,6 +112,7 @@
   border-radius: 3rem;
   /* border: 1px solid gray; */
   overflow: hidden;
+  background-color: #fae1ee;
 }
 
 .service1 .uicontent {
@@ -121,8 +121,6 @@
 
 .service1 .title {
   font-size: 1rem;
-  background-color: rgba(201, 195, 195, 0.507);
-  color: var(--clr--primary-orange);
   border-radius: 5px;
   width: fit-content;
   padding: 0.25rem;
@@ -163,9 +161,9 @@
   overflow: hidden;
 }
 
-/* .service2 {
-  background-color: purple;
-} */
+.service2 {
+  background-color: #e0f0ff;
+}
 
 .service2 .windowhead {
   background-color: black;
@@ -265,10 +263,10 @@
   background-repeat: none;
   background-position: center;
   background-size: cover;
+  background-color: #ffede0;
 }
 
 .service3 h2 {
-  background-color: rgba(255, 255, 255, 0.63);
   border-radius: 20px;
 }
 
@@ -283,6 +281,7 @@
   font-size: 1.8rem;
   font-weight: 800;
   position: relative;
+  background-color: #d3d6f0;
 }
 
 .service4 .service4heading h2:nth-child(2) {
@@ -342,3 +341,19 @@
   transform: rotate(75deg);
   filter: drop-shadow(2px 2px 1px gray);
 }
+
+/* // ScrollTrigger.create({
+        //   trigger: headline,
+        //   start: "top bottom",
+        //   end: "bottom 40%",
+        //   scrub: true,
+        //   markers: true,
+        //   onUpdate: (self) => {
+        //     const progress = self.progress;
+        //     gsap.to(photos[index], {
+        //       yPercent: 101 - progress * 101,
+        //       duration: 0.1,
+        //       ease: "none",
+        //     });
+        //   },
+        // }); */
