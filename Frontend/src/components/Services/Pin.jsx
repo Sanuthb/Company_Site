@@ -1,16 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import path from "../../assets/path1.png";
-import Uitoggle from "../UI_components/Uitoggle";
-import Uibutton from "../UI_components/Uibutton";
-import Uicalander from "../UI_components/Uicalander";
-import Windownavbar from "../UI_components/Windownavbar";
-import serviceimg2 from "../../assets/serviceimg2.png";
-import serviceimg3 from "../../assets/serviceimg3.png";
-import serviceimg1 from "../../assets/serviceimg1.png";
-import serviceimg4 from "../../assets/serviceimg4.png";
-import serviceimg5 from "../../assets/serviceimg5.png";
-import ourServices from "../../assets/splash.svg";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "./Pin.module.css";
