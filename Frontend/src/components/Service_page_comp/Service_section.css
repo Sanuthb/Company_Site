@@ -1,0 +1,40 @@
+.Service_Section1,
+.Service_Section2,
+.Service_Section3,
+.Service_Section4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.Service_Section1 {
+    background-color: lightcoral;
+}
+.Service_Section2 {
+    background-color: lightsalmon;
+}
+.Service_Section3 {
+    background-color: lightgreen;
+}
+.Service_Section4 {
+    background-color: lightblue;
+}
+
+
+
+
+.lerp-warp{
+    display: inline-block;
+    line-height: 1.2rem;
+}
+
+.lerp-warp span{
+    display: inline-block;
+    font-size: clamp(32px,5vw,8vw);
+    box-shadow: rgba(0,0,0,0.2) 0px 60px 40px -7px;
+    font-size: 100px;
+    padding: 30px;
+}

@@ -7,7 +7,7 @@ import LocomotiveScroll from "locomotive-scroll";
 const About = () => {
   const scroll = new LocomotiveScroll();
   return (
-    <main>
+    <main data-scroll-container>
       <Navbar />
       <About_landing />
     </main>
