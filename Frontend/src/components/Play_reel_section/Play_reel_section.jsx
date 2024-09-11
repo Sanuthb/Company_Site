@@ -1,25 +1,21 @@
 import React, { useRef, useEffect } from "react";
 import "./Play_reel_section.css";
 import reel_mockup from "../../assets/Video/Welcome.mp4";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import useWindowSize from "../../Hooks/useWindowSize";
-// import WindowWidth from "../../Hooks/WindowWidth";
 
 const Play_reel_section = () => {
   const sectionRef = useRef(null);
   const videocontinerRef = useRef(null);
   const videoRef = useRef(null);
 
-  // const windowWidth = WindowWidth()
-  // const windowSize = useWindowSize()
-  // console.log(windowSize.width)
   useEffect(() => {
-    if (true) {
-      var tl = gsap.timeline({
+    const mediaQuery = window.matchMedia("(min-width: 768px)"); 
+
+    if (mediaQuery.matches) {
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          markers: true,
+          markers: false,
           start: "top top",
           end: "bottom top",
           scrub: 1,
@@ -27,22 +23,11 @@ const Play_reel_section = () => {
         },
       });
 
-      tl.to(
-        videocontinerRef.current,
-        {
-          scale: 3.5,
-        },
-        "same"
-      );
-
-      tl.to(
-        videoRef.current,
-        {
-          borderRadius: "0vw",
-          duration: 0.5,
-        },
-        "same"
-      );
+      tl.to(videoRef.current, {
+        scale: 3.5,
+        duration: 1,
+        borderRadius: "0px",
+      });
     }
   }, []);
 

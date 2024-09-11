@@ -21,5 +21,7 @@
 @media only screen and (max-width: 476px) {
   .play_reel_video video {
    width: 100vw;
+   height: 400px;
+   object-fit: fill;
   }
 }
