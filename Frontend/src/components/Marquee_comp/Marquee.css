@@ -25,3 +25,15 @@
   padding-right: 1vw;
   line-height: 0.9;
 }
+
+
+@media only screen and (max-width: 476px) {
+    .Marquee{
+      height: 30vw;
+      border-top-left-radius: 2vw;
+      border-top-right-radius: 1vw;
+    }
+    .Marquee_container h1 {
+      font-size: 20vw;
+    }
+}

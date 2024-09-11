@@ -18,7 +18,7 @@ const Home = () => {
       <Hero />
       <Marquee />
       <Play_reel_section/>
-      <Pin/>
+      {/* <Pin/> */}
       <Enquire_section/>
       <Testimonial />
       <CTA />
