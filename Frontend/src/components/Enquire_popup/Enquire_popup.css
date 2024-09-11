@@ -23,78 +23,100 @@
   padding: 1vw 3vw;
 }
 
-.popup_heading{
-    font-size: 2rem;
+.popup_heading {
+  font-size: 2rem;
 }
-.popup_options h5{
-    font-size: 1.2rem;
-
+.popup_options h5 {
+  font-size: 1.2rem;
 }
-.options{
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: 1rem;
+.options {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .option_item {
-    border-radius: 10px;
-    border: 1px solid gray;
-    width: fit-content;
-    padding: 0.5vw 1vw;
-    cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: fit-content;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
 }
 
-
-.active{
-    background-color: var(--clr--primary-orange);
-    border: none;
-    color: white;
-    transition: .5s;
+.active {
+  background-color: var(--clr--primary-orange);
+  border: none;
+  color: white;
+  transition: 0.5s;
 }
 
 .popup_information {
-    margin-top:1vw;
+  margin-top: 1vw;
 }
 
-.popup_information h5{
-    font-size: 1.2rem;
+.popup_information h5 {
+  font-size: 1.2rem;
 }
 
-.popup_information label{
+.popup_information label {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.popup_information input,
+.popup_information textarea {
+  width: 70%;
+  padding: 0.5vw;
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.popup_information input::placeholder,
+.popup_information textarea::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.popup_information input:focus,
+.popup_information textarea:focus {
+  outline: none;
+}
+
+.popup_information button {
+  background-color: var(--clr--primary-orange);
+  border: none;
+  padding: 0.5vw 1vw;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Enquiry_btn {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 476px) {
+  .Enquire_popup {
+    flex-direction: column;
+  }
+
+  .enquire_popup_container {
+    width: 95%;
+    height: 100%;
+    padding: 3vw;
+  }
+  .popup_heading {
     font-size: 1rem;
-    font-weight: 100;
-}
-
-.popup_information input ,.popup_information textarea{
-    width: 70%;
-    padding: 0.5vw ;
-    border-radius: 10px;
-    border: 1px solid rgb(204, 204, 204);
-}
-
-.popup_information input::placeholder , .popup_information textarea::placeholder{
-    color: rgb(204, 204, 204);
-    font-size: 0.8rem;
-    font-weight: 100;
-}
-
-.popup_information input:focus, .popup_information textarea:focus{
-    outline: none;
-}
-
-.popup_information button{
-    background-color: var(--clr--primary-orange);
-    border: none;
-    padding: 0.5vw 1vw;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.Enquiry_btn{
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    gap:2rem;
+  }   
+  .popup_information input,
+  .popup_information textarea {
+    width: 100%;
+    padding: 1vw;
+    font-size: .8rem;
+  }
 }

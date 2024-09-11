@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
 }
 
 .contact_landing_container {
@@ -55,64 +54,79 @@
   font-size: 0.8rem;
 }
 
+.contact_landing_container_right {
+  width: 60%;
+  height: 100%;
+  padding: 1vw 2vw;
+}
+.contact_form_heading {
+  font-size: 2rem;
+}
+.contact_form .input {
+  width: 100%;
+  margin: 0.5vw 0vw;
+  padding: 0.2rem;
+  border-radius: 5px;
+  border: 1px solid #c9ccc9;
+}
 
-.contact_landing_container_right{
-    width: 60%;
-    height: 100%;
-    padding: 1vw 2vw;
+.input:focus {
+  outline: none;
 }
-.contact_form_heading{
-    font-size: 2rem;
+
+.input::placeholder {
+  color: #c9ccc9;
 }
-.contact_form .input{
+
+.contact_form label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact_form textarea {
+  width: 100%;
+  margin: 0.5vw 0vw;
+  padding: 0.2rem;
+  border-radius: 5px;
+  border: 1px solid #c9ccc9;
+}
+
+.contact_form textarea::placeholder {
+  color: #c9ccc9;
+}
+
+.contact_form textarea:focus {
+  outline: none;
+}
+
+.submit_btn {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.submit_btn button {
+  padding: 0.8vw 2vw;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--clr--primary-orange);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 476px) {
+  .contact_landing_container {
+    flex-direction: column;
     width: 100%;
-    margin: 0.5vw 0vw;
-    padding: 0.2rem;
-    border-radius: 5px;
-    border: 1px solid #c9ccc9;
-}
-
-.input:focus{
-    outline: none;
-}
-
-.input::placeholder{
-    color: #c9ccc9;
-}
-
-
-.contact_form label{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.contact_form textarea{
+  }
+  .contact_landing_container_left {
     width: 100%;
-    margin: 0.5vw 0vw;
-    padding: 0.2rem;
-    border-radius: 5px;
-    border: 1px solid #c9ccc9;
-}
-
-.contact_form textarea::placeholder{
-    color: #c9ccc9;
-}
-
-.contact_form textarea:focus{
-    outline: none;
-}
-
-.submit_btn{
-    display: flex;
-    align-items: baseline;
-    gap: 2rem;
-}
-
-.submit_btn button{
-    padding: 0.8vw 2vw;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--clr--primary-orange);
-    color: white;
-    cursor: pointer;
+  }
+  .contact_landing_container_right {
+    width: 100%;
+  }
+  .contact_form_heading {
+    font-size: 1.3rem;
+    margin-bottom: 5vw;
+  }
 }

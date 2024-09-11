@@ -19,70 +19,71 @@
   padding: 4vw;
 }
 
-.enquire_container1{
-    width: 100%;
-    height: 33.3%;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    flex-direction: column;
+.enquire_container1 {
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.enquire_container1 .enquire_heading{
-    color: black;
-    font-weight: bold;
-    line-height: 1.5;
+.enquire_container1 .enquire_heading {
+  color: black;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
-.enquire_heading h3{
-    font-size: 2rem;
-    font-weight: 100;
-    letter-spacing: 5;
-    text-transform: capitalize;
+.enquire_heading h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 5;
+  text-transform: capitalize;
 }
 
-.enquire_paragraph p{
-    color: var(--clr--gray);
-    font-size: 1.2rem;
-    line-height: 1.5;
+.enquire_paragraph p {
+  color: var(--clr--gray);
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
-.enquire_buttons{
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
+.enquire_buttons {
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
 }
 
-.enquire_buttons .enquire_button{
-    padding: 1vw 1.5vw;
-    background-color: var(--clr--primary-orange);
-    color: white;
-    font-size: 1rem;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    letter-spacing: 2px;
+.enquire_buttons .enquire_button {
+  padding: 1vw 1.5vw;
+  background-color: var(--clr--primary-orange);
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 
-.enquire_play_button{
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.enquire_play_button {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.enquire_play_button .enquire_button{
-    background-color: white;
-    color: var(--clr--primary-orange);
-    border: 1px solid var(--clr--primary-orange);
+.enquire_play_button .enquire_button {
+  background-color: white;
+  color: var(--clr--primary-orange);
+  border: 1px solid var(--clr--primary-orange);
 }
 
 /* Enquire_3d_text */
 
-.text_wrapper{
-    width: 100%;
+.text_wrapper {
+  width: 100%;
 }
 
 .text_wrapper h1 {
@@ -95,5 +96,38 @@
   font-weight: 600;
   font-style: normal;
   text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 476px) {
+  .Enquire_section {
+    width: 100%;
+    height: fit-content;
+    padding: 10vw 1vw;
+  }
+  .enquire_container {
+    width: 100%;
+    padding: 5vw;
+  }
+  .enquire_heading h3 {
+    font-size: 1.5rem;
+  }
+  .enquire_heading h3 span {
+    font-size: 1.5rem;
+  }
+  .enquire_paragraph p {
+    font-size: 1rem;
+  }
+  .text_wrapper{
+    margin-top: 10vw;
+  }
+  .text_wrapper h1 {
+    font-size: 5vw;
+    font-weight: 900;
+  }
+
+  .enquire_buttons .enquire_button {
+    padding: 2vw;
+    margin-top: 10vw;
+  }
 
 }

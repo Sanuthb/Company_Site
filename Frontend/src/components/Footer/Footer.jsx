@@ -1,19 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo.png";
-import { FaInstagram } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="Footer">
-      <div className="footer_logo">
-        <img src={logo} alt="stree2site" />
-        <h1>Stree2Site</h1>
-      </div>
-      <div className="footer_line"></div>
       <div className="footer_links">
         <div className="company_links">
           <div className="links">
@@ -44,7 +36,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer_line"></div>
+      <div className="footer_logo">
+        <img src={logo} alt="stree2site" />
+        <h1>Stree2Site</h1>
+      </div>
       <div className="footer_copyright">
         <h4>© Street2site 2024</h4>
       </div>

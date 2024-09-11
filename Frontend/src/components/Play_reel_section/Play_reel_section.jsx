@@ -3,17 +3,19 @@ import "./Play_reel_section.css";
 import reel_mockup from "../../assets/Video/Welcome.mp4";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import WindowWidth from "../../Hooks/WindowWidth";
+import useWindowSize from "../../Hooks/useWindowSize";
+// import WindowWidth from "../../Hooks/WindowWidth";
 
 const Play_reel_section = () => {
   const sectionRef = useRef(null);
   const videocontinerRef = useRef(null);
   const videoRef = useRef(null);
 
-  const windowWidth = WindowWidth()
-
+  // const windowWidth = WindowWidth()
+  // const windowSize = useWindowSize()
+  // console.log(windowSize.width)
   useEffect(() => {
-    if (windowWidth > 476) {
+    if (true) {
       var tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
