@@ -9,21 +9,13 @@ import Pin from "../components/Services/Pin.jsx";
 import LocomotiveScroll from "locomotive-scroll";
 import Enquire_section from "../components/Enquire_section/Enquire_section.jsx";
 import Play_reel_section from "../components/Play_reel_section/Play_reel_section.jsx";
+import Contact_video from "../components/Contact_Video/Contact_video.jsx";
 
 const Home = () => {
   const mainRef = useRef(null);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: mainRef.current,
-      smooth: true,
-    });
-
-    return () => scroll.destroy();
-  }, []);
-
+  const scroll = new LocomotiveScroll();
   return (
-    <main ref={mainRef} style={{ overflowX: "hidden" }} data-scroll-container>
+    <main  style={{ overflowX: "hidden" }} data-scroll-container>
       <Navbar />
       <Hero />
       <Marquee />
@@ -31,6 +23,7 @@ const Home = () => {
       {/* <Pin/> */}
       <Enquire_section />
       <Testimonial />
+      <Contact_video/>
       <CTA />
       <Footer />
     </main>

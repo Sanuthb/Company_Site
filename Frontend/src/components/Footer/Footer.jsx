@@ -1,50 +1,50 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/logo.png";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="Footer">
-      <div className="footer_links">
-        <div className="company_links">
-          <div className="links">
-            <h4>Explore</h4>
-            <div>
-              <Link to="/">Work</Link>
-              <Link to="/about">About</Link>
-              <Link to="/service">Service</Link>
-            </div>
-          </div>
-          <div className="links">
-            <h4>Stalk Us</h4>
-            <div>
-              <Link to="#">LinkedIn</Link>
-              <Link to="#">Instagram</Link>
-              <Link to="#">X</Link>
-            </div>
-          </div>
-          <div className="links contact_links">
-            <div>
-              <h4>Say hello</h4>
-              <Link to="#">Street2sitee@gmail.com</Link>
-            </div>
-            <div>
-              <h4>Long time no see</h4>
-              <Link to="#">+91 1234567890</Link>
-            </div>
-          </div>
+    <footer className="footer">
+    <div className="footer-content">
+      <div className="footer-section company-info">
+       <Link to='/' className="footer-logo"><h2>Street2Site</h2></Link>
+        <p>Transforming streets into vibrant sites. Your urban development partner.</p>
+        <div className="social-icons">
+          <Link to="#"><FaFacebookF  /></Link>
+          <Link to="#"><FaXTwitter /></Link>
+          <Link to="#"><FaInstagram  /></Link>
+          <Link to="#"><MdMailOutline/></Link>
         </div>
       </div>
-      <div className="footer_logo">
-        <img src={logo} alt="stree2site" />
-        <h1>Stree2Site</h1>
+      <div className="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/service">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
       </div>
-      <div className="footer_copyright">
-        <h4>© Street2site 2024</h4>
+      <div className="footer-section contact-info">
+        <h3>Contact Us</h3>
+        <address>
+          <p>#492 Dodda Thoguru,</p>
+          <p>Electronic City, Karnataka,560-100</p>
+          <p>Phone: +91 9110815046</p>
+          <p>Email: Street2Sitee@gmail.com</p>
+        </address>
       </div>
-    </footer>
+    </div>
+    <div className="footer-bottom">
+      <p>&copy; 2024 Street2Site. All rights reserved.</p>
+    </div>
+  </footer>
   );
 };
 
 export default Footer;
+

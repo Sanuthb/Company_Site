@@ -18,7 +18,7 @@ const Play_reel_section = () => {
           markers: false,
           start: "top top",
           end: "bottom top",
-          scrub: 1,
+          scrub: 2,
           pin: true,
         },
       });
