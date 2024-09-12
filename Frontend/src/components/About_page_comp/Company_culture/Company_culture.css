@@ -84,9 +84,9 @@
   overflow-x: hidden;
 }
 
-.companyculture5  h1{
-    line-height: 3rem;
-    text-align: center;
+.companyculture5 h1 {
+  line-height: 3rem;
+  text-align: center;
 }
 
 .companyculture6 {
@@ -99,4 +99,43 @@
 .companyculture6 h1 {
   line-height: 3rem;
   margin-bottom: 4vw;
+}
+
+@media only screen and (max-width: 476px) {
+  .Company_culture {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .companyculturebox {
+    width: 100%;
+    padding: 4vw;
+  }
+  .companyculturebox h1 {
+    font-size: 2rem;
+  }
+  .companyculture1 {
+    line-height: normal;
+    height: fit-content;
+  }
+  .companyculture1 p {
+    margin-top: 5vw;
+  }
+  .companyculture2 {
+    padding: 1vw 3vw;
+  }
+  .companyculture2 h1 {
+    font-size: 8rem;
+  }
+  .companyculture3 h1 {
+    font-size: 5rem;
+  }
+  .companyculture4 h1 {
+    font-size: 4rem;
+  }
+  .companyculture5 h1 {
+    line-height: 3rem;
+  }
+  .companyculture6 h1 {
+    line-height: 3rem;
+  }
 }

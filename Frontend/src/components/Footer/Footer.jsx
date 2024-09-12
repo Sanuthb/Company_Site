@@ -1,94 +1,50 @@
 import React from "react";
-import styles from "./Footer.module.css";
-import twitter from "../../assets/twitterx.svg";
-import instagram from "../../assets/instagram.svg";
-import linkedin from "../../assets/linkedin.svg";
-import logo from "../../assets/logo.png";
-import footerImg from "../../assets/footer.png";
-
+import "./Footer.css";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className={styles.mainContainer}>
-      <div className={styles.imageContainer}>
-        <img src={footerImg} alt="" />
-
-      </div>
-      <div className={styles.bottomContainer}>
-        <div className={styles.container}>
-          <div className={styles.pagesContainer}>
-            <div className={styles.explore}>
-              <h3>Explore</h3>
-            </div>
-            <ol className={styles.pages}>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/services">Services</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ol>
-          </div>
-          <div className={styles.infoContainer}>
-            <div className={styles.contact}>
-              <h3>Contact</h3>
-              <p>91+ 1234567890</p>
-            </div>
-            <div className={styles.address}>
-              <h3>Address</h3>
-              <p>
-                492, Dodda Thoguru, Konappana Agrahara,
-                <br />
-                Electronic City, Bengaluru, Karnataka 560100
-              </p>
-            </div>
-          </div>
-          <div className={styles.socialsContainer}>
-            <div className={styles.email}>
-              <h3>Email</h3>
-              <a href="mailto:support@example.com">support@example.com</a>
-            </div>
-            <div className={styles.social}>
-              <a href="https://www.twitter.com" target="_blank">
-                <img
-                  src={twitter}
-                  alt="Twitter"
-                  className={styles.socialIcon}
-                />
-              </a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  className={styles.socialIcon}
-                />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank">
-                <img
-                  src={linkedin}
-                  alt="LinkedIn"
-                  className={styles.socialIcon}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* <img src={logo} alt="Company Logo" /> */}
-        <div className={styles.logoContainer}>
-          <img src={logo} alt="" />
-
-          <h1>Street2Site</h1>
+    <footer className="footer">
+    <div className="footer-content">
+      <div className="footer-section company-info">
+       <Link to='/' className="footer-logo"><h2>Street2Site</h2></Link>
+        <p>Transforming streets into vibrant sites. Your urban development partner.</p>
+        <div className="social-icons">
+          <Link to="#"><FaFacebookF  /></Link>
+          <Link to="#"><FaXTwitter /></Link>
+          <Link to="#"><FaInstagram  /></Link>
+          <Link to="#"><MdMailOutline/></Link>
         </div>
       </div>
-    </footer>
+      <div className="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/service">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
+      </div>
+      <div className="footer-section contact-info">
+        <h3>Contact Us</h3>
+        <address>
+          <p>#492 Dodda Thoguru,</p>
+          <p>Electronic City, Karnataka,560-100</p>
+          <p>Phone: +91 9110815046</p>
+          <p>Email: Street2Sitee@gmail.com</p>
+        </address>
+      </div>
+    </div>
+    <div className="footer-bottom">
+      <p>&copy; 2024 Street2Site. All rights reserved.</p>
+    </div>
+  </footer>
   );
 };
 
 export default Footer;
+

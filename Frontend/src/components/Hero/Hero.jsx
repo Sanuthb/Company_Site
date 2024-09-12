@@ -16,7 +16,6 @@ const Hero = () => {
 
   return (
     <div
-    
       className="hero"
     >
       <div className="hero_content">

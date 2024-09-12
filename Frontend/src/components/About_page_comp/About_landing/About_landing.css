@@ -81,3 +81,31 @@
   border-radius: 2vw;
   object-fit: cover;
 }
+
+
+@media only screen and (max-width: 476px) {
+  .about_main_year h1{
+    font-size: 20vw;
+  }
+  .about_top_container{
+    top: 0%;
+  }
+  .about_top_container h1{
+    transform: translateY(38vh);
+  }
+  .about_bottom_container{
+    bottom: 0%;
+  }
+  
+  .about_bottom_container h1{
+    transform: translateY(-12vh);
+  }
+
+  .about_company_story p{
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+    line-height: 10vw;
+  }
+  
+}

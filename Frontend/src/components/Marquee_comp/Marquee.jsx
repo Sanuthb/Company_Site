@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 const Marquee = () => {
   return (
     <div
-    
       className="Marquee"
     >
       <div className="Marquee_container">

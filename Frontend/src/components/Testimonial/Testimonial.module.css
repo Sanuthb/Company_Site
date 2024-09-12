@@ -39,3 +39,13 @@
   width: 18rem;
   margin-bottom: 4rem;
 }
+
+
+@media only screen and (max-width: 476px) {
+  .section {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 90vw;
+  }
+}

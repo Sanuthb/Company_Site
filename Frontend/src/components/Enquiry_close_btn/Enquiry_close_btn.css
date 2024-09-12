@@ -28,3 +28,11 @@
     font-size: 1.4rem;   
     border-radius: 50%;
 }
+
+
+@media only screen and (max-width: 476px) {
+    .Enquiry_close_btn {
+        width: 100%;
+        height: fit-content;
+      }
+}
