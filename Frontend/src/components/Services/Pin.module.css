@@ -68,7 +68,6 @@
   text-align: center;
 }
 
-
 .right {
   height: 100vh;
   width: 50%;
@@ -109,10 +108,10 @@
 
 .service1 {
   background-color: #fae1ee;
-  box-shadow: 10px 5px 5px red;
 }
 .service1 h1 {
   text-align: center;
+  padding: 8%;
 }
 
 .service2 {
@@ -120,16 +119,19 @@
 }
 .service2 h1 {
   text-align: center;
+  padding: 8%;
 }
 .service3 {
   background-color: #ffede0;
 }
 .service3 h1 {
   text-align: center;
+  padding: 8%;
 }
 .service4 {
   background-color: #d3d6f0;
 }
 .service4 h1 {
   text-align: center;
+  padding: 8%;
 }

@@ -4,8 +4,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "./Pin.module.css";
 
-// Import your components and assets here
-
 gsap.registerPlugin(ScrollTrigger);
 
 const ServiceGallery = () => {
@@ -81,27 +79,28 @@ const ServiceGallery = () => {
         case 0:
           galleryRef.current.style.backgroundColor = "#fae1ee";
           desktopPhotos.current.style.boxShadow =
-            "10px 0 5px #e0b3c2, -10px 0 5px #e0b3c2, 0 10px 5px #e0b3c2, 0 -10px 5px #e0b3c2";
+            "10px 10px 15px  #e0b3c2, -10px 10px 15px  #e0b3c2, 10px -10px 15px  #e0b3c2, -10px -10px 15px  #e0b3c2";
+
           break;
         case 1:
           galleryRef.current.style.backgroundColor = "#e0f0ff";
           desktopPhotos.current.style.boxShadow =
-            "10px 0 5px #b3d3f2, -10px 0 5px #b3d3f2, 0 10px 5px #b3d3f2, 0 -10px 5px #b3d3f2";
+            "10px 10px 15px  #b3d3f2, -10px 10px 15px  #b3d3f2, 10px -10px 15px  #b3d3f2, -10px -10px 15px  #b3d3f2";
           break;
         case 2:
           galleryRef.current.style.backgroundColor = "#ffede0";
           desktopPhotos.current.style.boxShadow =
-            "10px 0 5px #e3c4a6, -10px 0 5px #e3c4a6, 0 10px 5px #e3c4a6, 0 -10px 5px #e3c4a6";
+            "10px 10px 15px  #e3c4a6, -10px 10px 15px  #e3c4a6, 10px -10px 15px  #e3c4a6, -10px -10px 15px  #e3c4a6";
           break;
         case 3:
           galleryRef.current.style.backgroundColor = "#d3d6f0";
           desktopPhotos.current.style.boxShadow =
-            "10px 0 5px #b3b7d6, -10px 0 5px #b3b7d6, 0 10px 5px #b3b7d6, 0 -10px 5px #b3b7d6";
+            "10px 10px 15px  #b3b7d6, -10px 10px 15px  #b3b7d6, 10px -10px 15px  #b3b7d6, -10px -10px 15px  #b3b7d6";
           break;
         default:
           galleryRef.current.style.backgroundColor = "#ffeae0"; // Default color
           desktopPhotos.current.style.boxShadow =
-            "10px 0 5px #d3a3a3, -10px 0 5px #d3a3a3, 0 10px 5px #d3a3a3, 0 -10px 5px #d3a3a3";
+            "10px 0 10px 5px #d3a3a3, -10px 0 10px 5px #d3a3a3, 0 10px 10px 5px #d3a3a3, 0 -10px 10px 5px #d3a3a3;";
           break;
       }
     }
@@ -143,25 +142,25 @@ const ServiceGallery = () => {
             className={`${styles.desktopPhoto} ${styles.service1}`}
             ref={(el) => (photosRef.current[0] = el)}
           >
-            <h1>Interface Design, User Experience, Creative Layouts</h1>
+            <h1>Interactive wireframes & prototypes</h1>{" "}
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service2}`}
             ref={(el) => (photosRef.current[1] = el)}
           >
-            <h1>Interface Design, User Experience, Creative Layouts</h1>
+            <h1>Custom websites for your brand</h1>
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service3}`}
             ref={(el) => (photosRef.current[2] = el)}
           >
-            <h1>Interface Design, User Experience, Creative Layouts</h1>
+            <h1>Data-driven marketing strategies</h1>{" "}
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service4}`}
             ref={(el) => (photosRef.current[3] = el)}
           >
-            <h1>Interface Design, User Experience, Creative Layouts</h1>
+            <h1>Tailored success strategies for growth</h1>
           </div>
         </div>
       </div>
