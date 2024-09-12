@@ -42,7 +42,7 @@ const ServiceGallery = () => {
           start: "top 80%",
           end: "top 50%",
           scrub: 2,
-          markers: true,
+          markers: false,
           onEnter: () => gsap.to(photos[index], { yPercent: 0, duration: 1 }),
           onLeaveBack: () =>
             gsap.to(photos[index], { yPercent: 101, duration: 1 }),
