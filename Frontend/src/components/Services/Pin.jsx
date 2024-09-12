@@ -74,7 +74,6 @@ const ServiceGallery = () => {
 
   useEffect(() => {
     if (activeSection !== null) {
-      console.log(`Active section: ${activeSection}`);
       switch (activeSection) {
         case 0:
           galleryRef.current.style.backgroundColor = "#fae1ee";
