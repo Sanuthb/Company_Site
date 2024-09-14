@@ -22,8 +22,8 @@
   justify-content: center;
 }
 
-.desktopContentContainer {
-  background-color: white;
+.desktopContentSection > * {
+  background-color: rgba(255, 255, 255, 0.541);
 
   width: 29.5vw;
   height: 29.5vw;
@@ -33,37 +33,39 @@
   align-items: center;
   justify-content: center;
 }
-.desktopContentContainer h1 {
+
+.desktopContentSection1 h1 {
   font-size: 2.302rem;
   font-weight: 900;
   padding-right: 0.6rem;
   letter-spacing: 0.4px;
-  text-align: center;
-  color: black;
-
-  /* transform: translateY(-100%); */
-}
-
-.desktopContentContainer p {
-  color: #000;
-  font-size: 1.125rem;
-  padding-bottom: 10px;
-  letter-spacing: 0.38px;
-  font-weight: 500;
-  padding-inline: 1rem;
+  color: #e0b3c2;
   text-align: center;
 }
-.desktopContentContainer button {
-  color: #000;
-  font-size: 1.125rem;
-  font-weight: 500;
+.desktopContentSection2 h1 {
+  font-size: 2.302rem;
+  font-weight: 900;
+  padding-right: 0.6rem;
+  letter-spacing: 0.4px;
+  color: #b3d3f2;
   text-align: center;
-  padding: 0.5rem 1rem;
-  background-color: transparent;
+}
 
-  border-radius: 0.85rem;
-  bottom: 25%;
-  /* margin-top:10% ; */
+.desktopContentSection3 h1 {
+  font-size: 2.302rem;
+  font-weight: 900;
+  padding-right: 0.6rem;
+  letter-spacing: 0.4px;
+  color: #e3c4a6;
+  text-align: center;
+}
+.desktopContentSection4 h1 {
+  font-size: 2.302rem;
+  font-weight: 900;
+  padding-right: 0.6rem;
+  letter-spacing: 0.4px;
+  color: #b3b7d6;
+  text-align: center;
 }
 
 .right {
@@ -82,12 +84,11 @@
   width: 29.5vw;
   height: 29.5vw;
   border-radius: 3rem;
-  border: 1px solid black;
+
+  margin-left: 3rem;
 
   position: relative;
   overflow: hidden;
-
-  margin-left: 3rem;
 }
 
 .desktopPhoto {
@@ -95,265 +96,42 @@
   width: 100%;
   height: 100%;
   border-radius: 3rem;
-  background-color: white;
+}
 
-  /* display: flex;
+.desktopPhoto > * {
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .service1 {
-  height: 100%;
-  height: 100%;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-direction: column;
-  border-radius: 3rem;
-  /* border: 1px solid gray; */
-  overflow: hidden;
   background-color: #fae1ee;
-} 
-
-.service1 .uicontent {
-  padding: 2rem;
 }
-
-.service1 .title {
-  font-size: 1rem;
-  border-radius: 5px;
-  width: fit-content;
-  padding: 0.25rem;
-}
-
-.service1 .heading {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.uidesign {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.uidesign .uicalander {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* .service1 .uiimage img {
-  height: 200px;
-} */
-
-.service2,
-.service3 {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-direction: column;
-  border-radius: 3rem;
-  /* border: 1px solid gray; */
-  overflow: hidden;
+.service1 h1 {
+  text-align: center;
+  padding: 8%;
 }
 
 .service2 {
   background-color: #e0f0ff;
 }
-
-.service2 .windowhead {
-  background-color: black;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-left: 30px;
+.service2 h1 {
+  text-align: center;
+  padding: 8%;
 }
-
-.windowhead .red,
-.yellow,
-.green {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.windowhead .red {
-  background-color: red;
-}
-.windowhead .yellow {
-  background-color: yellow;
-}
-
-.windowhead .green {
-  background-color: rgb(3, 212, 3);
-}
-
-.service2 .windowbody {
-  width: 100%;
-  height: calc(100% - 40px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: bold;
-  position: relative;
-  overflow: hidden;
-}
-
-.service2 .windowbody h2 {
-  width: 300px;
-}
-
-.service2 .windowbody .windownavbar {
-  position: absolute;
-  top: 10%;
-}
-
-.service2 .windowbody .wave1 {
-  position: absolute;
-  right: -50px;
-  top: -10px;
-  border-radius: 60% 40% 51% 49% / 42% 57% 43% 58%;
-  background-color: #c7ff0a;
-  width: 80px;
-  height: 100px;
-}
-
-.service2 .windowbody .wave2 {
-  position: absolute;
-  right: -50px;
-  bottom: -40px;
-  border-radius: 24% 76% 54% 46% / 54% 75% 25% 46%;
-  background-color: #d425e8;
-  width: 250px;
-  height: 100px;
-  color: white;
-  padding-left: 1rem;
-}
-
-.service2 .windowbody .tag {
-  width: 30px;
-  height: 30px;
-  background-color: #fe5563;
-  color: white;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-size: 0.8rem;
-  left: 10%;
-  top: 80%;
-  box-shadow: -1px 1px 5px rgba(66, 66, 66, 0.719);
-}
-
 .service3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  font-weight: 800;
-  background-image: url("../../assets/service.png");
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
   background-color: #ffede0;
 }
-
-.service3 h2 {
-  border-radius: 20px;
+.service3 h1 {
+  text-align: center;
+  padding: 8%;
 }
-
 .service4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 3rem;
-  /* border: 1px solid gray; */
-  overflow: hidden;
-  font-size: 1.8rem;
-  font-weight: 800;
-  position: relative;
   background-color: #d3d6f0;
 }
-
-.service4 .service4heading h2:nth-child(2) {
-  padding-left: 2rem;
-  font-size: 1.7rem;
+.service4 h1 {
+  text-align: center;
+  padding: 8%;
 }
-
-.service4bottomcolor {
-  width: 100%;
-  height: 50px;
-  background-color: #bbc1e2;
-}
-
-.serviceimg1 {
-  position: absolute;
-  top: 16%;
-  right: 10%;
-  width: 100px;
-  filter: drop-shadow(2px 2px 1px gray);
-}
-.serviceimg2 {
-  position: absolute;
-  top: 76%;
-  right: 10%;
-  width: 50px;
-  filter: drop-shadow(2px 2px 1px gray);
-}
-.serviceimg3 {
-  position: absolute;
-  top: 26%;
-  left: 10%;
-  width: 50px;
-  transform: rotate(-15deg);
-  filter: drop-shadow(2px 2px 1px gray);
-}
-
-.serviceimg4 {
-  position: absolute;
-  top: 70%;
-  left: 5%;
-  width: 100px;
-  transform: rotate(75deg);
-  filter: drop-shadow(2px 2px 1px gray);
-}
-.serviceimg5 {
-  position: absolute;
-  top: 6%;
-  left: 80%;
-  width: 50px;
-  transform: rotate(-15deg);
-}
-.serviceimg6 {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 20px;
-  transform: rotate(75deg);
-  filter: drop-shadow(2px 2px 1px gray);
-}
-
-/* // ScrollTrigger.create({
-        //   trigger: headline,
-        //   start: "top bottom",
-        //   end: "bottom 40%",
-        //   scrub: true,
-        //   markers: true,
-        //   onUpdate: (self) => {
-        //     const progress = self.progress;
-        //     gsap.to(photos[index], {
-        //       yPercent: 101 - progress * 101,
-        //       duration: 0.1,
-        //       ease: "none",
-        //     });
-        //   },
-        // }); */
