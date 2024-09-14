@@ -1,43 +1,52 @@
-import React, { useRef, useEffect } from "react";
-import "./Play_reel_section.css";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import reel_mockup from "../../assets/Video/Welcome.mp4";
-import gsap from "gsap";
+import "./Play_reel_section.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Play_reel_section = () => {
   const sectionRef = useRef(null);
-  const videocontinerRef = useRef(null);
-  const videoRef = useRef(null);
+  const videoContainerRef = useRef(null);
 
-  
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const section = sectionRef.current;
+    const videoContainer = videoContainerRef.current;
 
-    if(mediaQuery.matches){
-      var tl = gsap.timeline({
-        scrollTrigger:{
-          trigger:videocontinerRef.current,
-          scroller:"body",
-          markers:true,
-          start:"top 0%",
-          end:"top -100%",
-          scrub:2,
-          pin:true
-        }
-      })
+    const videoRect = videoContainer.getBoundingClientRect();
+    const scaleX = window.innerWidth / videoRect.width;
+    const scaleY = window.innerHeight / videoRect.height;
+    const scaleToFill = Math.max(scaleX, scaleY);
 
-      tl.to(videoRef.current,{
-        scale:3.5,
-        duration:1,
-        borderRadius:"0px"
-      })
-    }
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: "bottom 80%",
+        pin: true,
+        scrub:4,
+        markers: false, 
+      },
+    });
 
+    tl.fromTo(videoContainer, {
+      scale: 1,
+    },{
+      scale: scaleToFill,
+      duration: 1,
+      borderRadius: "0px",
+    });
 
-  });
+    return () => {
+      tl.kill(); 
+    };
+  }, []);
+
   return (
-    <div className="Play_reel_section" ref={sectionRef}>
-      <div className="play_reel_video" ref={videocontinerRef}>
-        <video ref={videoRef} src={reel_mockup} autoPlay muted loop></video>
+    <div ref={sectionRef} className="play_reel_video">
+      <div className="play_reel_video_container" ref={videoContainerRef}>
+        <video src={reel_mockup} autoPlay muted loop />
       </div>
     </div>
   );
