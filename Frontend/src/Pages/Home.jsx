@@ -7,7 +7,6 @@ import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
 import Pin from "../components/Services/Pin.jsx";
 import Enquire_section from "../components/Enquire_section/Enquire_section.jsx";
-import Play_reel_section from "../components/Play_reel_section/Play_reel_section.jsx";
 import Contact_video from "../components/Contact_Video/Contact_video.jsx";
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <Play_reel_section />
       {/* <Pin/> */}
       <Enquire_section />
       <Testimonial />
