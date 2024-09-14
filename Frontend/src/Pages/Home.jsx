@@ -6,6 +6,9 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
 import Pin from "../components/Services/Pin.jsx";
+import LocomotiveScroll from "locomotive-scroll";
+import Enquire_section from '../components/Enquire_section/Enquire_section.jsx'
+import PinVideo from "../components/PinVideo/PinVideo.jsx";
 import Enquire_section from "../components/Enquire_section/Enquire_section.jsx";
 import Contact_video from "../components/Contact_Video/Contact_video.jsx";
 
@@ -15,6 +18,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Marquee />
+      <PinVideo/>
       <Pin/>
       <Enquire_section />
       <Testimonial />
