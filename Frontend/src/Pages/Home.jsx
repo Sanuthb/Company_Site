@@ -8,7 +8,6 @@ import Footer from "../components/Footer/Footer";
 import Pin from "../components/Services/Pin.jsx";
 import Enquire_section from "../components/Enquire_section/Enquire_section.jsx";
 import Contact_video from "../components/Contact_Video/Contact_video.jsx";
-import Play_reel_video from "../components/Play_reel_video/Play_reel_video.jsx";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <Play_reel_video/>
       <Pin/>
       <Enquire_section />
       <Testimonial />
