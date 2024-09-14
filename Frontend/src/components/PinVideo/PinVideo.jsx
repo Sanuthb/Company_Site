@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Play_reel_section.css";
+import "./PinVideo.css";
 import reel_mockup from "../../assets/Video/Welcome.mp4";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -21,9 +21,13 @@ const Play_reel_section = () => {
       },
     });
 
-    tl.to(videocontinerRef.current,{
-      scale:3.5
-    },"same")
+    tl.to(
+      videocontinerRef.current,
+      {
+        scale: 3.5,
+      },
+      "same"
+    );
 
     tl.to(
       videoRef.current,
