@@ -12,7 +12,7 @@ const Service_landing_card = () => {
 
         const tl=gsap.timeline({
             scrollTrigger:{
-                trigger:'.Service_landing_card',
+                trigger:'.service_page_card_comp',
                 start:"center center",
                 end:"center center",
                 markers:false,
@@ -34,7 +34,7 @@ const Service_landing_card = () => {
 
 
   return (
-    <div className='Service_landing_card'>
+    <div className='Service_landing_page_card'>
       <div className="letters">
         <h1>T</h1>
         <h1>A</h1>

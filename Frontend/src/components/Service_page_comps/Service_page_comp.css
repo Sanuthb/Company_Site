@@ -1,10 +1,11 @@
-.Service_landing_card {
+.Service_landing_page_card {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  overflow: hidden;
 }
 .letters {
   display: flex;
@@ -20,67 +21,65 @@
 }
 
 /* services */
-.service_page_comp {
+.service_page_card_comp {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0vw 2vw;
-}
+} 
 
-.service_page_comp h1 {
+.service_page_card_comp h1 {
   font-size: 10vw;
   color: white;
   text-align: center;
   text-align: left;
   text-transform: uppercase;
   width: 50%;
-}
+} 
 
-.service_page_comp button {
+.service_page_card_comp button {
   border: none;
   background-color: white;
   font-size: 1rem;
   padding: 1vw 2vw;
   border-radius: 5vw;
   color: black;
-  cursor: pointer;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
   margin-bottom: 2vw;
-  pointer-events: auto;
 }
 
 
 @media only screen and (max-width: 476px) {
-  .Service_landing_card {
+  .Service_landing_page_card {
     flex-direction: column;
   }
   .letters h1{
       font-size: 20vw;
   }
-  .service_page_comp {
+  .service_page_card_comp {
     width: 95%;
     height: 50vh;
     border-radius: 3vw;
     margin-bottom: 2vw;
     align-items: flex-start;
   }
-  .service_btn{
+  .service_page_comp_btn{
     display: flex;
     align-items: flex-end;
     height: 100%;
   }
-  .service_page_comp h1 {
+  .service_page_card_comp h1 {
     font-size: 13vw;
   }
-  .service_page_comp button {
+  .service_page_card_comp button {
     font-size: 1.2rem;
     padding: 3vw;
   }
 
-}
+} 
