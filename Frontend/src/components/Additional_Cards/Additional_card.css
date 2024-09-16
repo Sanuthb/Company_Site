@@ -1,0 +1,94 @@
+.Additional_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 4rem;
+  padding: 3vw 1vw;
+}
+
+.Enquiry_card {
+  background-color: orchid;
+  width: 40%;
+  height: 70vh;
+  border-radius: 2vw;
+  display: flex;
+  align-items: flex-end;
+  padding: 2vw;
+}
+
+.Enquiry_card a {
+  text-decoration: none;
+  color: black;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Enquiry_card a:hover {
+  text-decoration: underline;
+}
+
+.Work_card {
+  background-color: var(--clr--primary-orange);
+  width: 40%;
+  height: 70vh;
+  border-radius: 2vw;
+  display: flex;
+  align-items: flex-end;
+  padding: 2vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Work_card a {
+  border: none;
+  background-color: white;
+  font-size: 1.3rem;
+  padding: 1vw 2vw;
+  border-radius: 5vw;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  pointer-events: auto;
+  transition: 0.5s;
+}
+
+.Work_card a:hover {
+  scale: 1.2;
+}
+
+@media only screen and (max-width: 476px) {
+  .Additional_card {
+    flex-direction: column;
+    padding: 3vw 2vw;
+  }
+
+  .Enquiry_card {
+    width: 100%;
+  }
+
+  .Enquiry_card a {
+    font-size: 8vw;
+  }
+  .Work_card {
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .Work_card a {
+    font-size: 1.5rem;
+    padding: 3vw;
+  }
+}

@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact";
 import ScrollToTop from "./Hooks/ScrollToTop";
 import PageAnimation from "./Hooks/PageAnimation";
 import Services from "./Pages/Services";
+import Work from "./Pages/Work";
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Services />} />
+          <Route path="/work" element={<Work />} />
         </Routes>
       </PageAnimation>
     </>

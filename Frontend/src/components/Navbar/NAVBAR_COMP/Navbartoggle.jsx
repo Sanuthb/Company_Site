@@ -51,6 +51,13 @@ const Navbartoggle = ({ navtrigger, setnavtrigger }) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
+            <Link to="/work">Works</Link>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
             <Link to="/about">About</Link>
           </motion.li>
           <motion.li

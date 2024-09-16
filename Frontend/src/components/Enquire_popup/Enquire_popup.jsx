@@ -97,7 +97,7 @@ const Enquire_popup = () => {
             <motion.h1
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
             >
               Start a project
             </motion.h1>
@@ -106,7 +106,7 @@ const Enquire_popup = () => {
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
             >
               <h5>What can we do for you?</h5>
               <div className="options">
@@ -126,7 +126,7 @@ const Enquire_popup = () => {
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
             >
               <form className="popup_information" onSubmit={handleSubmit}>
                 <h5>Your information</h5>
