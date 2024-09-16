@@ -7,63 +7,67 @@ import "./Company_culture.css";
 const Company_culture = () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const comapny_culture=useRef(null)
-  const companyculture1=useRef(null)
-  const companyculture2=useRef(null)
-  const companyculture3=useRef(null)
-  const companyculture4=useRef(null)
-  const companyculture5=useRef(null)
-  const companyculture6=useRef(null)
+  const comapny_culture = useRef(null);
+  const companyculture1 = useRef(null);
+  const companyculture2 = useRef(null);
+  const companyculture3 = useRef(null);
+  const companyculture4 = useRef(null);
+  const companyculture5 = useRef(null);
+  const companyculture6 = useRef(null);
 
   useGSAP(() => {
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: comapny_culture.current,
-        scroller: "body",
-        markers: false,
-        start: "60% center",
-        end: "bottom bottom",
-        scrub: 3,
-      },
-    });
+    const mobile_screen = gsap.matchMedia();
 
-    timeline
-      .fromTo(
-        companyculture1.current,
-        { x: "-100%"},
-        { x: "0%", duration: 0.5 },
-        "same_time"
-      )
-      .fromTo(
-        companyculture2.current,
-        { x: "100%"},
-        { x: "0%", duration: 0.5 },
-        "same_time"
-      )
-      .fromTo(
-        companyculture3.current,
-        { x: "-200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time1"
-      )
-      .fromTo(
-        companyculture4.current,
-        { x: "200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time1"
-      )
-      .fromTo(
-        companyculture5.current,
-        { x: "-200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time2"
-      )
-      .fromTo(
-        companyculture6.current,
-        { x: "200%" },
-        { x: "0%", duration: 0.5 },
-        "same_time2"
-      );
+    mobile_screen.add("(min-width:767px)", () => {
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: comapny_culture.current,
+          scroller: "body",
+          markers: false,
+          start: "60% center",
+          end: "bottom bottom",
+          scrub: 3,
+        },
+      });
+
+      timeline
+        .fromTo(
+          companyculture1.current,
+          { x: "-100%" },
+          { x: "0%", duration: 0.5 },
+          "same_time"
+        )
+        .fromTo(
+          companyculture2.current,
+          { x: "100%" },
+          { x: "0%", duration: 0.5 },
+          "same_time"
+        )
+        .fromTo(
+          companyculture3.current,
+          { x: "-200%" },
+          { x: "0%", duration: 0.5 },
+          "same_time1"
+        )
+        .fromTo(
+          companyculture4.current,
+          { x: "200%" },
+          { x: "0%", duration: 0.5 },
+          "same_time1"
+        )
+        .fromTo(
+          companyculture5.current,
+          { x: "-200%" },
+          { x: "0%", duration: 0.5 },
+          "same_time2"
+        )
+        .fromTo(
+          companyculture6.current,
+          { x: "200%" },
+          { x: "0%", duration: 0.5 },
+          "same_time2"
+        );
+    });
   });
 
   return (

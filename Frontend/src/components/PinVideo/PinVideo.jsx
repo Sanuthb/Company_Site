@@ -10,10 +10,14 @@ const Play_reel_section = () => {
   const videoRef = useRef(null);
 
   useGSAP(() => {
+
+    const mobile_screen = gsap.matchMedia();
+
+    mobile_screen.add("(min-width:767px)",()=>{
     var tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        markers: true,
+        markers: false,
         start: "top top",
         end: "bottom top",
         scrub: 1,
@@ -37,6 +41,7 @@ const Play_reel_section = () => {
       },
       "same"
     );
+  })
   });
 
   return (

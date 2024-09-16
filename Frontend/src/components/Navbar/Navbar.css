@@ -1,11 +1,12 @@
 nav{
-    position: sticky;
-    top: 0;left: 0;
+    position: fixed;
+    top: 0; left: 0;
     background-color: transparent;
     display: flex;align-items: center;
     justify-content: center;
     padding-top: 2vw;
     z-index: 1000;
+    width: 100%;
 }
 
 
