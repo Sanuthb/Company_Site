@@ -27,7 +27,7 @@
 
   width: 29.5vw;
   height: 29.5vw;
-  border-radius: 3rem;
+  border-radius: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@
 }
 
 .desktopContentSection1 h1 {
-  font-size: 2.302rem;
+  font-size: 3.5vw;
   font-weight: 900;
   padding-right: 0.6rem;
   letter-spacing: 0.4px;
@@ -43,7 +43,7 @@
   text-align: center;
 }
 .desktopContentSection2 h1 {
-  font-size: 2.302rem;
+  font-size: 3.5vw;
   font-weight: 900;
   padding-right: 0.6rem;
   letter-spacing: 0.4px;
@@ -52,7 +52,7 @@
 }
 
 .desktopContentSection3 h1 {
-  font-size: 2.302rem;
+  font-size: 3.5vw;
   font-weight: 900;
   padding-right: 0.6rem;
   letter-spacing: 0.4px;
@@ -60,7 +60,7 @@
   text-align: center;
 }
 .desktopContentSection4 h1 {
-  font-size: 2.302rem;
+  font-size: 3.5vw;
   font-weight: 900;
   padding-right: 0.6rem;
   letter-spacing: 0.4px;
@@ -74,7 +74,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   position: sticky;
   top: 0;
 }
@@ -84,9 +83,7 @@
   width: 29.5vw;
   height: 29.5vw;
   border-radius: 3rem;
-
   margin-left: 3rem;
-
   position: relative;
   overflow: hidden;
 }
@@ -111,6 +108,7 @@
 }
 .service1 h1 {
   text-align: center;
+  font-size: 2.75vw;
   padding: 8%;
 }
 
@@ -119,6 +117,8 @@
 }
 .service2 h1 {
   text-align: center;
+  font-size: 2.75vw;
+
   padding: 8%;
 }
 .service3 {
@@ -126,6 +126,8 @@
 }
 .service3 h1 {
   text-align: center;
+  font-size: 2.75vw;
+
   padding: 8%;
 }
 .service4 {
@@ -133,5 +135,181 @@
 }
 .service4 h1 {
   text-align: center;
+  font-size: 2.75vw;
+
   padding: 8%;
+}
+
+/* For mobile screens */
+
+@media (max-width: 768px) {
+  .gallery {
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+
+.desktopContent {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .desktopContentSection {
+    min-height: 100vh;
+  }
+  .desktopContentSection > * {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .desktopContentSection1 h1 {
+    font-size: 7vw;
+   
+  }
+  .desktopContentSection2 h1 {
+    font-size: 7vw;
+ 
+  }
+
+  .desktopContentSection3 h1 {
+    font-size: 7vw;
+
+  }
+  .desktopContentSection4 h1 {
+    font-size: 7vw;
+   
+  }
+}
+
+
+
+@media (max-width: 580px) {
+  .gallery {
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+
+.desktopContent {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .desktopContentSection {
+    min-height: 80vh;
+  }
+  .desktopContentSection > * {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .desktopContentSection1 h1 {
+    font-size: 8vw;
+   
+  }
+  .desktopContentSection2 h1 {
+    font-size: 8vw;
+ 
+  }
+
+  .desktopContentSection3 h1 {
+    font-size: 8vw;
+
+  }
+  .desktopContentSection4 h1 {
+    font-size: 8vw;
+   
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+
+.desktopContent {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .desktopContentSection {
+    min-height: 55vh;
+  }
+  .desktopContentSection > * {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .desktopContentSection1 h1 {
+    font-size: 8vw;
+   
+  }
+  .desktopContentSection2 h1 {
+    font-size: 8vw;
+ 
+  }
+
+  .desktopContentSection3 h1 {
+    font-size: 8vw;
+
+  }
+  .desktopContentSection4 h1 {
+    font-size: 8vw;
+   
+  }
+}
+
+@media (max-width: 380px) {
+  .gallery {
+    justify-content: center;
+  }
+  .right {
+    display: none;
+  }
+
+.desktopContent {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .desktopContentSection {
+    min-height: 50vh;
+  }
+  .desktopContentSection > * {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .desktopContentSection1 h1 {
+    font-size: 8vw;
+   
+  }
+  .desktopContentSection2 h1 {
+    font-size: 8vw;
+ 
+  }
+
+  .desktopContentSection3 h1 {
+    font-size: 8vw;
+
+  }
+  .desktopContentSection4 h1 {
+    font-size: 8vw;
+   
+  }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
 }

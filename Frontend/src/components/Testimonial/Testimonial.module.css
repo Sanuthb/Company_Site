@@ -1,3 +1,9 @@
+.stories{
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 800;
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -27,25 +33,120 @@
 .yellow {
   background-color: #fcea59;
 }
+
 .container p {
   padding: 2rem  1rem;
-  font-size: 2.2rem;
-  line-height: 2.95rem;
+  font-size: 2.5vw;
+  line-height: 3vw;
   font-weight: 400;
 }
 
 .video {
-  height: 10rem;
-  width: 18rem;
+  height: 10vw;
+  width: 18vw;
   margin-bottom: 4rem;
 }
 
 
-@media only screen and (max-width: 476px) {
+
+
+
+@media only screen and (max-width: 1020px) {
+  .stories{
+  font-size: 8vw;
+}
   .section {
     flex-direction: column;
   }
   .container {
-    max-width: 90vw;
+    max-width: 50vw;
+      min-height: 80vh;
+
+    outline: 2px solid;
   }
+
+.container p {
+  font-size: 4vw;
+    line-height: 4.5vw;
+
+}
+.video {
+  height: 15vw;
+  width: 25vw;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .stories{
+  font-size: 8vw;
+}
+  .section {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 65vw;
+      min-height: 80vh;
+
+  }
+  .container p {
+  font-size: 5vw;
+    line-height: 6vw;
+
+}
+  .video {
+  height: 25vw;
+  width: 35vw;
+}
+}
+
+@media only screen and (max-width: 580px) {
+  .stories{
+  font-size: 9vw;
+    position: relative;
+  transform: translateY(5vw);
+}
+  .section {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 65vw;
+      min-height: 50vh;
+
+  }
+  .container p {
+  font-size: 5vw;
+    line-height: 6vw;
+
+}
+  .video {
+  height: 25vw;
+  width: 35vw;
+}
+}
+
+@media only screen and (max-width: 380px) {
+  .stories{
+  font-size: 8vw;
+  position: relative;
+  transform: translateY(15vw);
+}
+  .section {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 75vw;
+      min-height: 50vh;
+
+      outline: 2px solid;
+
+  }
+  .container p {
+  font-size: 7vw;
+    line-height: 7.5vw;
+
+}
+  .video {
+  height: 35vw;
+  width: 45vw;
+}
 }
