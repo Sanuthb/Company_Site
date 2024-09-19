@@ -1,0 +1,48 @@
+.overlap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr--primary-orange);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  border-radius: 10vw;
+}
+
+.logo_animation {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 2vw;
+  border-radius: 10vw;
+}
+
+.logo_image {
+  width: 200px;
+}
+
+.logo_text {
+  font-size: 5vw;
+}
+
+@media only screen and (max-width: 476px) {
+  .logo_animation {
+    flex-direction: column;
+    border-radius: 40%;
+    padding: 3vw;
+  }
+  .logo_image {
+    width: 300px;
+  }
+
+  .logo_text {
+    font-size: 6vw;
+    text-align: center;
+  }
+}

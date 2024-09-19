@@ -29,11 +29,11 @@
 
 @media only screen and (max-width: 476px) {
     .Marquee{
-      height: 30vw;
-      border-top-left-radius: 2vw;
-      border-top-right-radius: 1vw;
+      height: 50vw;
+      border-top-left-radius: 0vw;
+      border-top-right-radius: 0vw;
     }
     .Marquee_container h1 {
-      font-size: 20vw;
+      font-size: 40vw;
     }
 }

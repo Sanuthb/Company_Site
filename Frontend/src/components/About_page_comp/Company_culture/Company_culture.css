@@ -126,8 +126,12 @@
   .companyculture2 h1 {
     font-size: 8rem;
   }
+  .companyculture3{
+    padding: 3vw;
+    justify-content: center;
+  }
   .companyculture3 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .companyculture4 h1 {
     font-size: 4rem;

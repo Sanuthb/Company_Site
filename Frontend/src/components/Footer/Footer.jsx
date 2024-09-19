@@ -36,7 +36,7 @@ const Footer = () => {
           <p>#492 Dodda Thoguru,</p>
           <p>Electronic City, Karnataka,560-100</p>
           <p>Phone: +91 9110815046</p>
-          <p>Email: Street2Sitee@gmail.com</p>
+          <p>Email: info@street2site.com</p>
         </address>
       </div>
     </div>

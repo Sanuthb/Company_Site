@@ -22,7 +22,7 @@
 @media only screen and (max-width: 476px) {
   .contact_video_container {
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     padding: 1vw;
   }
   .contact_video {
@@ -30,6 +30,6 @@
     height: 100%;
   }
   .contact_video_container video {
-    object-fit: contain;
+    object-fit: fill;
   }
 }

@@ -10,7 +10,7 @@
 .enquire_container {
   width: 80%;
   height: 60%;
-  background-color: #eff3ef;
+  background-color: #f0f1f0;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -48,9 +48,9 @@
 }
 
 .enquire_buttons {
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
   align-items: center;
 }
 
@@ -63,7 +63,7 @@
   border: none;
   cursor: pointer;
   letter-spacing: 2px;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .enquire_play_button {
@@ -124,10 +124,10 @@
     font-size: 5vw;
     font-weight: 900;
   }
-
   .enquire_buttons .enquire_button {
-    padding: 2vw;
+    padding: 3vw;
     margin-top: 10vw;
+    font-size: 4vw;
   }
 
 }

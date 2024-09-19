@@ -116,7 +116,7 @@
     transform: translateY(0);
   }
   .about_main_year h1 {
-    font-size: 15vw;
+    font-size: 20vw;
   }
 
   .about_bottom_container {
@@ -152,15 +152,15 @@
   }
 
   .about_text_para h5 {
-    font-size: 4vw;
+    font-size: 10vw;
   }
 
   .about_text_para p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .about_image img {
-    width: 80%;
+    width: 90%;
     height: 80%;
   }
 }

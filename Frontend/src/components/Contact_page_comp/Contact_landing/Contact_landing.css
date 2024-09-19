@@ -129,4 +129,8 @@
     font-size: 1.3rem;
     margin-bottom: 5vw;
   }
+  
+.submit_btn button {
+  padding: 2vw;
+}
 }

@@ -76,36 +76,38 @@ const ServiceGallery = () => {
     if (activeSection !== null) {
       switch (activeSection) {
         case 0:
-          galleryRef.current.style.backgroundColor = "#fae1ee";
+          galleryRef.current.style.backgroundColor = "#9B59B6";
           desktopPhotos.current.style.boxShadow =
-            "10px 10px 15px  #e0b3c2, -10px 10px 15px  #e0b3c2, 10px -10px 15px  #e0b3c2, -10px -10px 15px  #e0b3c2";
+            "rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 8px 15px, rgba(255, 255, 255, 0.493)";
 
           break;
         case 1:
-          galleryRef.current.style.backgroundColor = "#e0f0ff";
+          galleryRef.current.style.backgroundColor = "#FF2D55";
           desktopPhotos.current.style.boxShadow =
-            "10px 10px 15px  #b3d3f2, -10px 10px 15px  #b3d3f2, 10px -10px 15px  #b3d3f2, -10px -10px 15px  #b3d3f2";
+          "rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 8px 15px, rgba(255, 255, 255, 0.493)";
           break;
         case 2:
-          galleryRef.current.style.backgroundColor = "#ffede0";
+          galleryRef.current.style.backgroundColor = "#FF851B";
           desktopPhotos.current.style.boxShadow =
-            "10px 10px 15px  #e3c4a6, -10px 10px 15px  #e3c4a6, 10px -10px 15px  #e3c4a6, -10px -10px 15px  #e3c4a6";
+          "rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 8px 15px, rgba(255, 255, 255, 0.493)";
           break;
         case 3:
-          galleryRef.current.style.backgroundColor = "#d3d6f0";
+          galleryRef.current.style.backgroundColor = "#F7CA18";
           desktopPhotos.current.style.boxShadow =
-            "10px 10px 15px  #b3b7d6, -10px 10px 15px  #b3b7d6, 10px -10px 15px  #b3b7d6, -10px -10px 15px  #b3b7d6";
+          "rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 8px 15px, rgba(255, 255, 255, 0.493)";
           break;
         default:
-          galleryRef.current.style.backgroundColor = "#ffeae0"; // Default color
+          galleryRef.current.style.backgroundColor = "black"; 
           desktopPhotos.current.style.boxShadow =
-            "10px 0 10px 5px #d3a3a3, -10px 0 10px 5px #d3a3a3, 0 10px 10px 5px #d3a3a3, 0 -10px 10px 5px #d3a3a3;";
+          "rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 8px 15px, rgba(255, 255, 255, 0.493)";
           break;
       }
     }
   }, [activeSection]);
 
   return (
+    <>
+    <div className={styles.serviceheading}><h1>Your Partner in Success</h1></div>
     <div ref={galleryRef} className={styles.gallery}>
       <div className={styles.left}>
         <div className={styles.desktopContent}>
@@ -117,7 +119,7 @@ const ServiceGallery = () => {
               heading: "Web Design & Development",
             },
             {
-              heading: "Digital Marketing",
+              heading: "SEO",
             },
             {
               heading: "Success Solutions",
@@ -153,7 +155,7 @@ const ServiceGallery = () => {
             className={`${styles.desktopPhoto} ${styles.service3}`}
             ref={(el) => (photosRef.current[2] = el)}
           >
-            <h1>Data-driven marketing strategies</h1>{" "}
+            <h1>Rank Higher, Grow Faster</h1>{" "}
           </div>
           <div
             className={`${styles.desktopPhoto} ${styles.service4}`}
@@ -164,6 +166,7 @@ const ServiceGallery = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

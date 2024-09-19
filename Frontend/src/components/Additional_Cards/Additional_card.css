@@ -76,6 +76,7 @@
 
   .Enquiry_card {
     width: 100%;
+    height: 50vh;
   }
 
   .Enquiry_card a {
@@ -83,6 +84,7 @@
   }
   .Work_card {
     width: 100%;
+    height: 50vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
