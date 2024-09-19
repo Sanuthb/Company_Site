@@ -9,6 +9,7 @@
 .gallery {
   display: flex;
   transition: background-color 0.5s ease; 
+  padding-bottom: 4vw;
 }
 
 .left {
@@ -199,7 +200,7 @@
 
 @media (max-width: 580px) {
   .serviceheading{
-    font-size: 5vw;
+    font-size: 6vw;
     margin-top: 5vw;
   }
   .gallery {
@@ -216,7 +217,6 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 1rem;
 }
   .desktopContentSection {
     min-height: 80vh;
@@ -247,7 +247,7 @@
 
 @media (max-width: 500px) {
   .serviceheading{
-    font-size: 3vw;
+    font-size: 6vw;
     margin-top: 5vw;
   }
   .gallery {
