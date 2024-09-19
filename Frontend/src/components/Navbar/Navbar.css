@@ -1,5 +1,5 @@
 nav{
-    position: sticky;
+    position: fixed;
     top: 0; left: 0;
     background-color: transparent;
     display: flex;align-items: center;
@@ -32,3 +32,9 @@ nav .logo img {
     transition: all 0.5s ease;
 }
 
+@media only screen and (max-width:476px) {
+    nav{
+        position: fixed;
+        top: 0; left: 0;
+    }
+}

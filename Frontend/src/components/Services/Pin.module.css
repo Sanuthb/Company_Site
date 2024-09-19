@@ -198,6 +198,10 @@
 
 
 @media (max-width: 580px) {
+  .serviceheading{
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
   .gallery {
     justify-content: center;
     gap: 1rem;
@@ -242,6 +246,10 @@
 }
 
 @media (max-width: 500px) {
+  .serviceheading{
+    font-size: 3vw;
+    margin-top: 5vw;
+  }
   .gallery {
     justify-content: center;
   }
