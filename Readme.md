@@ -1,3 +1,0 @@
-# Company Site
-
-# Vite@latest
