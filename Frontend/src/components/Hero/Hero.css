@@ -5,6 +5,7 @@
   justify-content: baseline;
   flex-direction: column;
   position: relative;
+  margin-top: 10vw;
 }
 
 .hero_content:nth-child(1) {
