@@ -107,7 +107,7 @@
 
   .enquire_popup_container {
     width: 95%;
-    height: 100%;
+    height: fit-content;
     padding: 3vw;
   }
   .popup_heading {
@@ -116,6 +116,7 @@
   .popup_information input,
   .popup_information textarea {
     width: 100%;
+    height: 12vw;
     padding: 1vw;
     font-size: .8rem;
   }

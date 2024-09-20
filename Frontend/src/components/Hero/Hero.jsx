@@ -2,6 +2,8 @@ import React from "react";
 import "./Hero.css";
 import useEyeMovement from "../../Hooks/useEyeballmovement";
 import { motion } from 'framer-motion'
+import { useSetRecoilState } from "recoil";
+import { Enquiry_popup_tigger } from "../../Atoms/Enquiry_atom/Enquiry_atom";
 // import Editornavbar from "../Editorcomponents/Editornavbar";
 // import Editor_sidebar from "../Editorcomponents/Editor_sidebar";
 // import Code_Editor from "../Editorcomponents/Code_Editor";
@@ -13,7 +15,8 @@ const Hero = () => {
 
   useEyeMovement(".eyeball", ".ball");
 
-
+  const setenquirytigger = useSetRecoilState(Enquiry_popup_tigger)
+  
   return (
     <div
       className="hero"
@@ -50,6 +53,7 @@ const Hero = () => {
             whileHover={{ scale: 1.2 }}
             onHoverStart={(e) => {}}
             onHoverEnd={(e) => {}}
+            onClick={()=>{setenquirytigger(true)}}
           >
             Get Started
           </motion.button>
