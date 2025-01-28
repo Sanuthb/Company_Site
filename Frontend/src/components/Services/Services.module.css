@@ -1,5 +1,8 @@
 .Services {
   position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .Service {
@@ -8,16 +11,12 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(11, 1fr);
-
   margin: auto;
   gap: 1rem;
-
-  /* z-index: 1; */
+  padding: 2rem;
 }
 
 .service1 {
-  /* height: 33.25rem; */
-  /* width: 16.063rem; */
   display: flex;
   align-items: baseline;
   justify-content: space-between;

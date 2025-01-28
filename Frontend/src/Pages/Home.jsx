@@ -5,10 +5,11 @@ import Marquee from "../components/Marquee_comp/Marquee";
 import Testimonial from "../components/Testimonial/Testimonial";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
-import Pin from "../components/Services/Pin.jsx";
 import Enquire_section from '../components/Enquire_section/Enquire_section.jsx'
-import PinVideo from "../components/PinVideo/PinVideo.jsx";
 import Contact_video from "../components/Contact_Video/Contact_video.jsx";
+import Services from "../components/Services/Services.jsx";
+import PinVideo from "../components/PinVideo/PinVideo.jsx";
+import Pin from "../components/Services/backservice/Pin.jsx";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Marquee />
       <PinVideo/>
       <Pin/>
+      {/* <Services/> */}
       <Enquire_section />
       <Testimonial />
       <Contact_video />
