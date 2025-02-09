@@ -7,9 +7,9 @@ import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
 import Enquire_section from '../components/Enquire_section/Enquire_section.jsx'
 import Contact_video from "../components/Contact_Video/Contact_video.jsx";
-import Services from "../components/Services/Services.jsx";
 import PinVideo from "../components/PinVideo/PinVideo.jsx";
 import Pin from "../components/Services/backservice/Pin.jsx";
+import OurServices from "../components/Services/OurServices.jsx";
 
 const Home = () => {
   return (
@@ -17,9 +17,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <PinVideo/>
-      <Pin/>
-      {/* <Services/> */}
+      {/* <PinVideo/> */}
+      <OurServices/>
+      {/* <Pin/> */}
       <Enquire_section />
       <Testimonial />
       <Contact_video />
