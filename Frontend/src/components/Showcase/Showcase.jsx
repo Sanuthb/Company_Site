@@ -16,11 +16,11 @@ const Showcase = () => {
   const [slidesToShow, setslidesToShow] = useState(3);
 
   const slides = [
-    { img: website1 },
     { img: website5 },
     { img: website2 },
     { img: website3 },
     { img: website4 },
+    { img: website1 },
   ];
 
   useEffect(() => {
