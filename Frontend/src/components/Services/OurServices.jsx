@@ -1,17 +1,19 @@
 import React from "react";
 import "./OurService.css";
-import web1 from '../../assets/Service/webservice/web1.jpg'
-import web2 from '../../assets/Service/webservice/web2.jpg'
-import web3 from '../../assets/Service/webservice/web3.jpg'
-import uiux1 from '../../assets/Service/uiux/uiux1.jpg'
-import uiux2 from '../../assets/Service/uiux/uiux2.jpg'
-import uiux3 from '../../assets/Service/uiux/uiux3.jpg'
-import merchd1 from '../../assets/Service/merchd/merchd1.jpg'
-import merchd2 from '../../assets/Service/merchd/merchd2.jpg'
-import merchd3 from '../../assets/Service/merchd/merchd3.jpg'
-import psimg from '../../assets/Service/problemsolving.jpg'
-import psimg2 from '../../assets/Service/psimg2.jpg'
-import aicontact from '../../assets/Service/aicontact.jpg'
+import web1 from "../../assets/Service/webservice/web1.jpg";
+import web2 from "../../assets/Service/webservice/web2.jpg";
+import web3 from "../../assets/Service/webservice/web3.jpg";
+import uiux1 from "../../assets/Service/uiux/uiux1.jpg";
+import uiux2 from "../../assets/Service/uiux/uiux2.jpg";
+import uiux3 from "../../assets/Service/uiux/uiux3.jpg";
+import merchd1 from "../../assets/Service/merchd/merchd1.jpg";
+import merchd2 from "../../assets/Service/merchd/merchd2.jpg";
+import merchd3 from "../../assets/Service/merchd/merchd3.jpg";
+import psimg from "../../assets/Service/problemsolving.jpg";
+import psimg2 from "../../assets/Service/psimg2.jpg";
+import crm from "../../assets/Service/crm.avif";
+import crm2 from "../../assets/Service/crm2.avif";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -39,7 +41,7 @@ const OurServices = () => {
         </p>
       </div>
       <div className="service_grid">
-        <div className="service_card light-blue">
+        <Link to="/service" className="service_card light-blue">
           <div className="serviceheading">
             <h2>Smart Website Builder</h2>
             <p>Build stunning websites effortlessly.</p>
@@ -49,8 +51,8 @@ const OurServices = () => {
             <img src={web2} alt="webservice" />
             <img src={web3} alt="webservice" />
           </div>
-        </div>
-        <div className="service_card yellow">
+        </Link>
+        <Link to="/service" className="service_card yellow">
           <div className="serviceheading">
             <h2>UI/UX Perfection</h2>
             <p>Enhance user experience with sleek and modern designs.</p>
@@ -60,8 +62,8 @@ const OurServices = () => {
             <img src={uiux2} alt="uiuxserviceimages" />
             <img src={uiux3} alt="uiuxserviceimages" />
           </div>
-        </div>
-        <div className="service_card blue">
+        </Link>
+        <Link to="/service" className="service_card blue">
           <div className="serviceheading">
             <h2>Merchandise Design</h2>
             <p>Create high-quality custom merchandise for your brand.</p>
@@ -71,14 +73,14 @@ const OurServices = () => {
             <img src={merchd2} alt="merchdserviceimages" />
             <img src={merchd3} alt="merchdserviceimages" />
           </div>
-        </div>
-        <div className="service_card dark-blue seocard">
+        </Link>
+        <Link to="/service" className="service_card dark-blue seocard">
           <div className="serviceheading seo">
             <h2>SEO Optimizer</h2>
             <p>Boost your site’s visibility with expert SEO strategies.</p>
           </div>
-        </div>
-        <div className="service_card dark-yellow">
+        </Link>
+        <Link to="/service" className="service_card dark-yellow">
           <div className="serviceheading">
             <h2>Smart Problem-Solving</h2>
             <p>Fix website challenges with expert-driven solutions.</p>
@@ -88,16 +90,19 @@ const OurServices = () => {
             <img src={psimg} alt="psimages" />
             <img src={psimg2} alt="psimages" />
           </div>
-        </div>
-        <div className="service_card light-blue">
+        </Link>
+        <Link to="/service" className="service_card light-blue">
           <div className="serviceheading">
-            <h2>Automated Customer Support</h2>
-            <p>Effortlessly manage customer interactions. (Coming Soon)</p>
+            <h2>Street2Site CRM</h2>
+            <p>
+              Streamline your business with our powerful CRM solution.
+            </p>
           </div>
           <div className="aicontactimages serviceimages padding_cont">
-            <img src={aicontact} alt="aicontactimages" />
+            <img src={crm} alt="Street2Site CRM" />
+            <img src={crm2} alt="Street2Site CRM" />
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

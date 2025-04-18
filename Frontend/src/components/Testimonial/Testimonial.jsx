@@ -9,7 +9,9 @@ import service from "../../assets/Videos/service.mp4";
 const Testimonial = () => {
   return (
     <>
-      <h1 className={styles.stories}>Stories of Success</h1>
+      <div className={styles.testimonialtext}>
+        <h1 className={styles.stories}>Stories of Success</h1>
+      </div>
       <div className={styles.section}>
         <motion.div
           className={`${styles.container} ${styles.blue}`}

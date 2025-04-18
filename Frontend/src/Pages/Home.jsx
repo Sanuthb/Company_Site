@@ -10,6 +10,7 @@ import Contact_video from "../components/Contact_Video/Contact_video.jsx";
 import PinVideo from "../components/PinVideo/PinVideo.jsx";
 import Pin from "../components/Services/backservice/Pin.jsx";
 import OurServices from "../components/Services/OurServices.jsx";
+import Showcase from "../components/Showcase/Showcase.jsx";
 
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
       {/* <PinVideo/> */}
       <OurServices/>
       {/* <Pin/> */}
-      <Enquire_section />
+      {/* <Enquire_section /> */}
+      <Showcase/>
       <Testimonial />
       <Contact_video />
       <CTA />

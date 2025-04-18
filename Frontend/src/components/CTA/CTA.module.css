@@ -1,52 +1,60 @@
 .container {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  max-width: 60rem;
+  margin: 5% auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 5vw;
-  gap: 4rem;
-  min-height: 18rem;
-  max-width: 60rem;
-  margin-inline: auto;
-  margin-block: 5%;
-  background-color: rgb(231, 228, 228);
-  border-radius: 2vw;
+  gap: 2rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
 }
 
-.container p {
-  font-size: 2.5rem;
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
 }
 
-a{
+.subtitle {
+  font-size: 1.2rem;
+  color: #111;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+a {
   text-decoration: none;
 }
 
-.CTA{
-  color: white;
+.ctaButton {
   background-color: var(--clr--primary-orange);
-  width: fit-content;
-  padding: 1vw;
-  border-radius: 1vw;
-  font-size: 1.5vw;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-
-
 
 @media only screen and (max-width: 476px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
   .container {
-    margin: 0vw 5vw;
-    margin-top: 5vw;
+    margin: 2rem 1rem;
   }
-  .container p {
-    font-size: 7vw;
-  }
-  
-.CTA{
-  padding: 3vw;
-  border-radius: 3vw;
-  font-size: 4vw;
-  font-weight: 100;
-  cursor: pointer;
-}
 }
