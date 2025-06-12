@@ -1,56 +1,41 @@
-import React from 'react'
-import './Service_page_comp.css'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import React from "react";
+import { motion } from "framer-motion";
 
 const Service_landing_card = () => {
-
-    useGSAP(()=>{
-
-        const tl=gsap.timeline({
-            scrollTrigger:{
-                trigger:'.service_page_card_comp',
-                start:"center center",
-                end:"center center",
-                markers:false,
-                scrub:4,
-            }
-        })
-
-        tl.to(".letters",{
-            scale:10,
-            duration:1.5,
-            ease:"power2.inOut",
-            stagger:{
-                amount:0.1
-            },
-            opacity:0
-        })
-    })
-
-
-
   return (
-    <div className='Service_landing_page_card'>
-      <div className="letters">
-        <h1>T</h1>
-        <h1>A</h1>
-        <h1>S</h1>
-        <h1>K</h1>
+    <motion.div
+      initial={{ y: "-200%" }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      style={{
+        width: "100%",
+        height: "60vh",
+        padding: "2rem",
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "flex-start",
+        color: "#1a1a1a",
+      }}
+    >
+      <div>
+        <h1
+          style={{
+            fontSize: "clamp(2rem, 5vw, 3.5rem)",
+            fontWeight: "bold",
+            margin: 0,
+            textShadow: "1px 1px 8px rgba(0,0,0,0.1)",
+          }}
+        >
+          Solutions Tailored for You
+        </h1>
+        <p
+        >
+          Discover services designed to meet your unique goals and elevate your
+          business to the next level.
+        </p>
       </div>
-      <div className="letters">
-        <h1>F</h1>
-        <h1>O</h1>
-        <h1>R</h1>
-        <h1>G</h1>
-        <h1>E</h1>
-      </div>
+    </motion.div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Service_landing_card
+export default Service_landing_card;

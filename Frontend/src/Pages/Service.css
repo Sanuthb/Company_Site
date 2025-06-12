@@ -1,0 +1,15 @@
+.service_page_our_works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+@media only screen and (max-width: 476px) {
+  .service_page_our_works {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+

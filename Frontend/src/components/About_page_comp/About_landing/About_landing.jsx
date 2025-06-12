@@ -30,37 +30,33 @@ const About_landing = () => {
               <span style={{ fontWeight: "600", color: "white" }}>
                 Street2Site
               </span>{" "}
-              started in 2023 with a passionate team of{" "}
+              is not just a name—it’s our journey.
+            </p>
+            <p>
+              We began in 2023 as a group of four undergraduates with a vision and no resources. We didn’t even have ₹1500 to buy our first domain. After months of waiting, one of our co-founders won a small competition, and with that prize money—we bought our domain and launched our dream.
+            </p>
+            <p>
+              In the beginning, we walked through streets, going shop to shop, handing out self-printed A4 color sheets as brochures because that’s all we could afford. We faced rejections, questions, and even humiliation—but we never gave up.
+            </p>
+            <p>
+              One company even told us we weren’t good enough. Months later, they came back with an offer—but we had already moved forward.
+            </p>
+            <p>
               <span style={{ fontWeight: "600", color: "white" }}>
-                web developers, designers, and marketers
+                Street2Site is not just a name. It's a reflection of who we are and where we come from.
               </span>{" "}
-              who wanted to help every business shine online. We believed that
-              no one should struggle to make their mark on the web.
+              We started in the streets, and now we’re on the site—to elevate others like us from the streets to the site.
             </p>
             <p>
-              Fueled by this belief, we set out to turn great ideas into
-              powerful{" "}
-              <span style={{ fontWeight: "600", color: "white" }}>
-                digital experiences
-              </span>
-              . Our goal was to make online success attainable for every
-              business, no matter its size.
-            </p>
-            <p>
-              Today, we’re proud to have worked with a diverse range of clients,
-              creating{" "}
+              Today, we’re proud to empower businesses with meaningful{" "}
               <span style={{ fontWeight: "600", color: "white" }}>
                 websites
               </span>{" "}
               and{" "}
               <span style={{ fontWeight: "600", color: "white" }}>
                 digital solutions
-              </span>{" "}
-              that truly make a difference. For us, it’s all about combining{" "}
-              <span style={{ fontWeight: "600", color: "white" }}>
-                creativity
-              </span>{" "}
-              and deep understanding to deliver results that matter.
+              </span>
+              , helping them build their own success stories.
             </p>
           </div>
         </div>
@@ -68,12 +64,13 @@ const About_landing = () => {
           <h1>Est. 2023</h1>
         </div>
       </div>
+      
       <div className="about_text_para">
-        <h5>Shaping the digital world,</h5>
-        <p>enjoying every step.</p>
+        <h5>From the streets to the site,</h5>
+        <p>we're here to lift others the way we lifted ourselves.</p>
       </div>
       <div className="about_image">
-        <img src={about_office} alt="" />
+        <img src={about_office} alt="Our humble beginning" />
       </div>
       <div className="our_culture">
         <Company_culture />

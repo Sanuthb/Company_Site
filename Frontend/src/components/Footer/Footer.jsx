@@ -35,8 +35,8 @@ const Footer = () => {
         <address>
           <p>#492 Dodda Thoguru,</p>
           <p>Electronic City, Karnataka,560-100</p>
-          <p>Phone: +91 9110815046</p>
-          <p>Email: info@street2site.com</p>
+          <p>Phone: +91 9482211264</p>
+          <p>Email: street2sitee@gmail.com</p>
         </address>
       </div>
     </div>

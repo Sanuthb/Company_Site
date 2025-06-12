@@ -66,9 +66,9 @@ const about_page_animation = (
           opacity: 0,
         },
         {
-          y: "-50%",
+          y: "-80%",
           opacity: 1,
-          duration: 2,
+          duration: 3,
         },
         "start+=1"
       );
