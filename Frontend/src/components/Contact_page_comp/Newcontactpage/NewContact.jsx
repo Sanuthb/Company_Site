@@ -3,6 +3,7 @@ import contact from "../../../assets/contact/contact_vect.webp";
 import "./Contact.css";
 import { motion } from "framer-motion";
 import { BiUpArrowAlt, BiDownArrowAlt } from "react-icons/bi";
+import axios from "axios";
 
 const NewContact = () => {
   const [openleftQuestion, setOpenleftQuestion] = useState(0);
@@ -34,7 +35,7 @@ const NewContact = () => {
 
     console.log("Form submitted:", formData);
     setIsSubmitted(true);
-    // Reset form fields
+    axios.post("https://company-backend-36tw.onrender.com/api/v1/contact",formData)
     setName("");
     setEmail("");
     setPhone("");

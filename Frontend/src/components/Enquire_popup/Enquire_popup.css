@@ -34,6 +34,7 @@
   align-items: baseline;
   justify-content: flex-start;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .option_item {
@@ -120,4 +121,11 @@
     padding: 1vw;
     font-size: .8rem;
   }
+  .option_item {
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: fit-content;
+  padding: 1vw 2vw;
+  cursor: pointer;
+}
 }

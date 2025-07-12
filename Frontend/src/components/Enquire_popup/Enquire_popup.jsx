@@ -7,19 +7,18 @@ import {
   enquiry_status_atom,
 } from "../../Atoms/Enquiry_atom/Enquiry_atom";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
-import { EMAILJS_API, ENQUIRY_TEMP_ID, Service_ID } from "../../../API_KEYS";
+import axios from "axios";
 import Enquiry_close_btn from "../Enquiry_close_btn/Enquiry_close_btn";
 
 const Enquire_popup = () => {
-  const options = ["Website", "SEO", "UI/UX", "Success Solution"];
+  const options = ["Website", "SEO", "UI/UX", "Success Solution", "Your idea"];
   const [enquiryfrom, setEnquiryfrom] = useRecoilState(Enquiry_selection_atom);
   const [enquirystatus, setEnquirystatus] = useRecoilState(enquiry_status_atom);
-  const enquiryTrigger = useRecoilValue(Enquiry_popup_tigger)
+  const enquiryTrigger = useRecoilValue(Enquiry_popup_tigger);
   const [form, setForm] = useState({
     name: "",
     phone: "",
-    email: "",
+    email:"",
     message: "",
   });
 
@@ -50,37 +49,53 @@ const Enquire_popup = () => {
     }));
   };
 
-  const sendEmail = (formData) => {
-    emailjs
-      .send(Service_ID, ENQUIRY_TEMP_ID, formData, EMAILJS_API)
-      .then(() => {
-        setEnquirystatus("Form Submitted");
-      })
-      .catch(() => {
-        setEnquirystatus("Failed to submit");
-      });
+  const sendToBackend = async (formData) => {
+  try {
+    const response = await axios.post(
+      "https://company-backend-36tw.onrender.com/api/v1/projectinquiry",
+      {
+        name: formData.name,
+        phone: formData.phone,
+        message: formData.message,
+        email:formData.email,
+        serviceType: formData.options?.join(", ") || "Not specified",
+      }
+    );
+
+    if (response.data.success) {
+      setEnquirystatus("Form submitted successfully!");
+    } else {
+      setEnquirystatus("Submission failed.");
+    }
+  } catch (error) {
+    console.error("Form submission error:", error);
+    setEnquirystatus("Server error.");
+  }
+};
+
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    ...form,
+    options: enquiryfrom.options,
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = {
-      ...form,
-      options: enquiryfrom.options,
-    };
+  setEnquiryfrom((prev) => ({
+    ...prev,
+    ...formData,
+  }));
 
-    setEnquiryfrom((prev) => ({
-      ...prev,
-      ...formData,
-    }));
-    setForm({
-      name: "",
-      phone: "",
-      email: "",
-      message: "",
-    });
+  await sendToBackend(formData);
 
-    sendEmail(formData);
-  };
+  setForm({
+    name: "",
+    phone: "",
+    email:"",
+    message: "",
+  });
+};
+
 
   if (!enquiryTrigger) return null;
 
@@ -114,7 +129,7 @@ const Enquire_popup = () => {
                   <div
                     key={index}
                     className={`option_item ${
-                      enquiryfrom.options.includes(option) ? "active" : ""
+                      enquiryfrom.options?.includes(option) ? "active" : ""
                     }`}
                     onClick={() => handleOptionClick(option)}
                   >
@@ -141,6 +156,17 @@ const Enquire_popup = () => {
                   onChange={handleInputChange}
                 />
                 <br />
+                 <label htmlFor="name">Email</label>
+                <br />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  value={form.email}
+                  onChange={handleInputChange}
+                />
+                <br />
                 <label htmlFor="phone">Phone</label>
                 <br />
                 <input
@@ -149,17 +175,6 @@ const Enquire_popup = () => {
                   id="phone"
                   placeholder="Phone"
                   value={form.phone}
-                  onChange={handleInputChange}
-                />
-                <br />
-                <label htmlFor="email">Email</label>
-                <br />
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  value={form.email}
                   onChange={handleInputChange}
                 />
                 <br />
@@ -194,7 +209,7 @@ const Enquire_popup = () => {
           </div>
         </div>
       </div>
-      <Enquiry_close_btn/>
+      <Enquiry_close_btn />
     </motion.div>
   );
 };
