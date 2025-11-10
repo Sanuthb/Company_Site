@@ -1,0 +1,43 @@
+/* microcrm.css (Improved non-mobile structure) */
+
+.crmlanding {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* Use CSS for padding */
+  max-width: 1200px; /* Optional: Constrain max width for better viewing */
+  margin: 0 auto; /* Optional: Center the container */
+}
+
+.crmleft, .crmright {
+  /* Control the width using flex-basis/flex-grow for flexibility */
+  flex: 1 1 50%; /* Each takes up roughly 50% of the space */
+  max-width: 50%; /* Set a max width */
+}
+
+/* Ensure the image container is flexible */
+.crmleft > div {
+    width: 100%;
+    height: auto;
+}
+/* Ensure the image itself scales */
+.crmleft img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any baseline spacing */
+}
+
+/* --- Media Query for Mobile --- */
+@media only screen and (max-width: 476px) {
+  .crmlanding {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem; /* Adjust mobile gap */
+  }
+  .crmright, .crmleft {
+    width: 100%; /* Force full width on mobile */
+    max-width: 100%; /* Clear max width */
+    flex: 1 1 100%; /* Ensure full width usage */
+  }
+}

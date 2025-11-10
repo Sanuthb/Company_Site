@@ -8,6 +8,7 @@ import ScrollToTop from "./Hooks/ScrollToTop";
 import PageAnimation from "./Hooks/PageAnimation";
 import Services from "./Pages/Services";
 import Work from "./Pages/Work";
+import Microcrm from "./Pages/Microcrm";
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Services />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/microcrm-booking" element={<Microcrm />} />
         </Routes>
       </PageAnimation>
     </>
